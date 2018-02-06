@@ -1,0 +1,11 @@
+// Icon Sizes
+// ----------
+
+.#{$gw2-css-prefix}-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+@for $i from 2 through 5 {
+  .#{$gw2-css-prefix}-#{$i}x { font-size: #{$i}em; }
+}
