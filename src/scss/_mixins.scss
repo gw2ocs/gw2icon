@@ -7,6 +7,12 @@
     height: 1em;
 }
 
+@mixin gw2-iconify($x, $y, $width, $height) {
+    background-position: -#{$x / $file-width}em -#{$y / $file-width}em;
+    width: #{$width / $file-width}em;
+    padding-bottom: #{$height / $file-width}em;
+}
+
 @mixin gw2-icon-rotate($degree, $rotation) {
     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})";
     -webkit-transform: rotate($degrees);

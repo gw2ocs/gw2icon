@@ -1,0 +1,110 @@
+$file-height: 954;
+$file-width: 24;
+$file-name: 'currencies.png';
+
+.#{$gw2-css-prefix}-hero-point,
+.#{$gw2-css-prefix}-aetherium,
+.#{$gw2-css-prefix}-airship-part,
+.#{$gw2-css-prefix}-ascalonian-tear,
+.#{$gw2-css-prefix}-ascended-shard-of-glory,
+.#{$gw2-css-prefix}-badge-of-honor,
+.#{$gw2-css-prefix}-bandit-crest,
+.#{$gw2-css-prefix}-deadly-bloom,
+.#{$gw2-css-prefix}-destroyed-matrix-cube-key,
+.#{$gw2-css-prefix}-elegy-mosaic,
+.#{$gw2-css-prefix}-exalted-key,
+.#{$gw2-css-prefix}-favor,
+.#{$gw2-css-prefix}-flame-legion-charr-carving,
+.#{$gw2-css-prefix}-fractal-relic,
+.#{$gw2-css-prefix}-gaeting-crystal,
+.#{$gw2-css-prefix}-geode,
+.#{$gw2-css-prefix}-guild-commendation,
+.#{$gw2-css-prefix}-knowledge-crystal,
+.#{$gw2-css-prefix}-laurel,
+.#{$gw2-css-prefix}-ley-line-crystal,
+.#{$gw2-css-prefix}-lump-of-aurillium,
+.#{$gw2-css-prefix}-machete,
+.#{$gw2-css-prefix}-magnetite-shard,
+.#{$gw2-css-prefix}-manifesto-of-the-moletariate,
+.#{$gw2-css-prefix}-pact-crowbar,
+.#{$gw2-css-prefix}-pristine-fractal-relic,
+.#{$gw2-css-prefix}-proof-of-heroics,
+.#{$gw2-css-prefix}-provisioner-token,
+.#{$gw2-css-prefix}-pvp-league-ticket,
+.#{$gw2-css-prefix}-rolan-master-key,
+.#{$gw2-css-prefix}-seal-of-beetletun,
+.#{$gw2-css-prefix}-shard-of-zhaitan,
+.#{$gw2-css-prefix}-spirit-shard,
+.#{$gw2-css-prefix}-supply,
+.#{$gw2-css-prefix}-symbol-of-koda,
+.#{$gw2-css-prefix}-testimony-of-heroics,
+.#{$gw2-css-prefix}-trade-contract,
+.#{$gw2-css-prefix}-transmutation-charge,
+.#{$gw2-css-prefix}-unbound-magic,
+.#{$gw2-css-prefix}-vial-of-chak-acid,
+.#{$gw2-css-prefix}-volatile-magic,
+.#{$gw2-css-prefix}-wvw-tournament-claim-ticket,
+.#{$gw2-css-prefix}-zephyrite-lockpick,
+.#{$gw2-css-prefix}-karma,
+.#{$gw2-css-prefix}-gem,
+.#{$gw2-css-prefix}-copper-coin,
+.#{$gw2-css-prefix}-gold-coin,
+.#{$gw2-css-prefix}-influence,
+.#{$gw2-css-prefix}-silver-coin { 
+    display: inline-block;
+    background: url('#{$gw2-img-path}#{$file-name}') no-repeat;
+    background-size: 1em #{$file-height / $file-width}em;
+    overflow: hidden;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.#{$gw2-css-prefix}-hero-point { @include gw2-iconify(0, 0, 24, 24); }
+.#{$gw2-css-prefix}-aetherium { @include gw2-iconify(0, 24, 20, 20); }
+.#{$gw2-css-prefix}-airship-part { @include gw2-iconify(0, 44, 20, 20); }
+.#{$gw2-css-prefix}-ascalonian-tear { @include gw2-iconify(0, 64, 20, 20); }
+.#{$gw2-css-prefix}-ascended-shard-of-glory { @include gw2-iconify(0, 84, 20, 20); }
+.#{$gw2-css-prefix}-badge-of-honor { @include gw2-iconify(0, 104, 20, 20); }
+.#{$gw2-css-prefix}-bandit-crest { @include gw2-iconify(0, 124, 20, 20); }
+.#{$gw2-css-prefix}-deadly-bloom { @include gw2-iconify(0, 144, 20, 20); }
+.#{$gw2-css-prefix}-destroyed-matrix-cube-key { @include gw2-iconify(0, 164, 20, 20); }
+.#{$gw2-css-prefix}-elegy-mosaic { @include gw2-iconify(0, 184, 20, 20); }
+.#{$gw2-css-prefix}-exalted-key { @include gw2-iconify(0, 204, 20, 20); }
+.#{$gw2-css-prefix}-favor { @include gw2-iconify(0, 224, 20, 20); }
+.#{$gw2-css-prefix}-flame-legion-charr-carving { @include gw2-iconify(0, 224, 20, 20); }
+.#{$gw2-css-prefix}-fractal-relic { @include gw2-iconify(0, 264, 20, 20); }
+.#{$gw2-css-prefix}-gaeting-crystal { @include gw2-iconify(0, 284, 20, 20); }
+.#{$gw2-css-prefix}-geode { @include gw2-iconify(0, 304, 20, 20); }
+.#{$gw2-css-prefix}-guild-commendation { @include gw2-iconify(0, 324, 20, 20); }
+.#{$gw2-css-prefix}-knowledge-crystal { @include gw2-iconify(0, 344, 20, 20); }
+.#{$gw2-css-prefix}-laurel { @include gw2-iconify(0, 364, 20, 20); }
+.#{$gw2-css-prefix}-ley-line-crystal { @include gw2-iconify(0, 384, 20, 20); }
+.#{$gw2-css-prefix}-lump-of-aurillium { @include gw2-iconify(0, 404, 20, 20); }
+.#{$gw2-css-prefix}-machete { @include gw2-iconify(0, 424, 20, 20); }
+.#{$gw2-css-prefix}-magnetite-shard { @include gw2-iconify(0, 444, 20, 20); }
+.#{$gw2-css-prefix}-manifesto-of-the-moletariate { @include gw2-iconify(0, 464, 20, 20); }
+.#{$gw2-css-prefix}-pact-crowbar { @include gw2-iconify(0, 484, 20, 20); }
+.#{$gw2-css-prefix}-pristine-fractal-relic { @include gw2-iconify(0, 504, 20, 20); }
+.#{$gw2-css-prefix}-proof-of-heroics { @include gw2-iconify(0, 524, 20, 20); }
+.#{$gw2-css-prefix}-provisioner-token { @include gw2-iconify(0, 544, 20, 20); }
+.#{$gw2-css-prefix}-pvp-league-ticket { @include gw2-iconify(0, 564, 20, 20); }
+.#{$gw2-css-prefix}-rolan-master-key { @include gw2-iconify(0, 584, 20, 20); }
+.#{$gw2-css-prefix}-seal-of-beetletun { @include gw2-iconify(0, 604, 20, 20); }
+.#{$gw2-css-prefix}-shard-of-zhaitan { @include gw2-iconify(0, 624, 20, 20); }
+.#{$gw2-css-prefix}-spirit-shard { @include gw2-iconify(0, 644, 20, 20); }
+.#{$gw2-css-prefix}-supply { @include gw2-iconify(0, 664, 20, 20); }
+.#{$gw2-css-prefix}-symbol-of-koda { @include gw2-iconify(0, 684, 20, 20); }
+.#{$gw2-css-prefix}-testimony-of-heroics { @include gw2-iconify(0, 704, 20, 20); }
+.#{$gw2-css-prefix}-trade-contract { @include gw2-iconify(0, 724, 20, 20); }
+.#{$gw2-css-prefix}-transmutation-charge { @include gw2-iconify(0, 744, 20, 20); }
+.#{$gw2-css-prefix}-unbound-magic { @include gw2-iconify(0, 764, 20, 20); }
+.#{$gw2-css-prefix}-vial-of-chak-acid { @include gw2-iconify(0, 784, 20, 20); }
+.#{$gw2-css-prefix}-volatile-magic { @include gw2-iconify(0, 804, 20, 20); }
+.#{$gw2-css-prefix}-wvw-tournament-claim-ticket { @include gw2-iconify(0, 824, 20, 20); }
+.#{$gw2-css-prefix}-zephyrite-lockpick { @include gw2-iconify(0, 844, 20, 20); }
+.#{$gw2-css-prefix}-karma { @include gw2-iconify(0, 864, 18, 15); }
+.#{$gw2-css-prefix}-gem { @include gw2-iconify(0, 879, 16, 15); }
+.#{$gw2-css-prefix}-copper-coin { @include gw2-iconify(0, 894, 15, 15); }
+.#{$gw2-css-prefix}-gold-coin { @include gw2-iconify(0, 909, 15, 15); }
+.#{$gw2-css-prefix}-influence { @include gw2-iconify(0, 924, 15, 15); }
+.#{$gw2-css-prefix}-silver-coin { @include gw2-iconify(0, 939, 15, 15); }
