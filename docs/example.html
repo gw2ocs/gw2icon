@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>GW2Icon</title>
-    <link rel="stylesheet" href="css/gw2icon.min.css" />
+    <link rel="stylesheet" href="../build/css/gw2icon.min.css" />
+    <link rel="stylesheet" href="css/default.css" />
     <style>
         .wrapper {
             display: grid;
@@ -15,8 +16,26 @@
     </style>
 </head>
 <body>
-    <h1>Title with icon <i class="gw2-silver-coin" title="Silver Coin"></i></h1>
-    <p>Text containing <i class="gw2-gold-coin" title="Gold Coin"></i> icons</p>
+    <h1>GW2Icon <i class="gw2-hero-point"></i></h1>
+    <h2>Getting Started</h2>
+    <h3>Installation</h3>
+
+    Put `css/gw2icon.min.css` in your `css/` folder and `img/gw2icon/` in your `img/` folder.
+    Then, in your header, just add:
+
+    <pre>
+        <code class="html">&lt;link rel="stylesheet" href="/path/to/css/gw2icon.min.css" /></code>
+    </pre>
+    
+    <h3>Usage</h3>
+
+    To include an icon in your page, write:
+
+    <pre>
+        <code class="html">&lt;i class="gw2-gold-coin">&lt;/i></code>
+    </pre>
+
+    <h2>Icons</h2>
     <div class="wrapper">
         <div><i class="gw2-hero-point"></i> hero-point</div>
         <div><i class="gw2-aetherium"></i> aetherium</div>
@@ -68,5 +87,8 @@
         <div><i class="gw2-influence"></i> influence</div>
         <div><i class="gw2-silver-coin"></i> silver-coin</div>
     </div>
+
+    <script src="js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
