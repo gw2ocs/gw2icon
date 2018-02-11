@@ -21,28 +21,40 @@
             font-family: 'Lato', sans-serif; 
         }
 
-        main {
-            width: 100%;
-            max-width: 900px;
-            margin: 0 auto;
+        header {
+            text-align: center;
         }
 
         footer {
             text-align: center;
         }
 
+        main {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        section {
+            border-top: 1px solid white;
+        }
+
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Cagliostro', sans-serif;
         }
 
+        strong {
+            color: gold;
+        }
+
         ::-moz-selection {
             color: gold;
-            background: red;
+            background: firebrick;
         }
 
         ::selection {
             color: orange;
-            background: red;
+            background: firebrick;
         } 
 
         .hljs {
@@ -57,8 +69,10 @@
     </style>
 </head>
 <body>
-    <main>
+    <header>
         <h1>GW2Icon <i class="gw2-hero-point"></i></h1>
+    </header>
+    <main>
         <section>
             <h2 id="getting-started">Getting Started</h2>
             <h3 id="installation">Installation</h3>
@@ -133,7 +147,8 @@
     </main>
 
     <footer>
-        Icons are © 2015 ArenaNet, Inc. All rights reserved.
+        <p>Icons and background are © 2015 ArenaNet, Inc. All rights reserved.</p>
+        <p>Made with <i class="gw2-karma"></i> by <strong>Pandraghon#3647</stronng>.</p>
     </footer>
 
     <script src="js/highlight.pack.js"></script>
