@@ -1,0 +1,4 @@
+language: bash
+
+script:
+    - .github/gh-pages
