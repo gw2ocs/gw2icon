@@ -13,7 +13,7 @@ mkdir -p img
 mv build/css/gw2icon.min.css css/
 mv build/img/gw2icon img/
 rm -rf build
-add .
-commit -m "Update docs"
-git push origin HEAD:gh-pages
+git add .
+git commit -m "Update docs"
+git push ${GITHUB_TOKEN}@origin HEAD:gh-pages
 git checkout master
