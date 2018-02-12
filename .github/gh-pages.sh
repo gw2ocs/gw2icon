@@ -1,5 +1,7 @@
 #!/bin/sh
 
+git config --global github.user Pandraghon
+git config --global github.token $GITHUB_TOKEN
 git checkout -b gh-pages origin/gh-pages
 git clean -fdx
 rm -rf img
@@ -15,5 +17,5 @@ mv build/img/gw2icon img/
 rm -rf build
 git add .
 git commit -m "Update docs"
-git push ${GITHUB_TOKEN}@origin HEAD:gh-pages
+git push origin HEAD:gh-pages
 git checkout master
