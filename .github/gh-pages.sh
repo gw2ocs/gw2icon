@@ -1,6 +1,6 @@
 #!/bin/sh
 
-curl -u Pandraghon:$GITHUB_TOKEN https://api.github.com/user
+curl -v -H "Authorization: token $GITHUB_TOKEN" https://github.com
 git checkout -b gh-pages origin/gh-pages
 git clean -fdx
 rm -rf img
