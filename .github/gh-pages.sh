@@ -1,6 +1,6 @@
 #!/bin/sh
 
-git checkout gh-pages
+git checkout -b gh-pages origin/gh-pages
 git clean -fdx
 rm -rf img
 rm -rf css
@@ -15,5 +15,5 @@ mv build/img/gw2icon img/
 rm -rf build
 add .
 commit -m "Update docs"
-git push
+git push origin HEAD:gh-pages
 git checkout master
