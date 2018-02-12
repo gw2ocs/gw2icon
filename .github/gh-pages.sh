@@ -1,3 +1,5 @@
+#!/bin/sh
+
 git checkout gh-pages
 git clean -fdx
 rm -rf img

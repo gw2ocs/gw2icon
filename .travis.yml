@@ -1,4 +1,4 @@
 language: bash
 
 script:
-    - .github/gh-pages
+    - bash .github/gh-pages.sh
