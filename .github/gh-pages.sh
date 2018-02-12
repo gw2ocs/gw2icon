@@ -1,7 +1,6 @@
 #!/bin/sh
 
-git config user.name Pandraghon
-git config user.token $GITHUB_TOKEN
+curl -u Pandraghon:$GITHUB_TOKEN https://api.github.com/user
 git checkout -b gh-pages origin/gh-pages
 git clean -fdx
 rm -rf img
