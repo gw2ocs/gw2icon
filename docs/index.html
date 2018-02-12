@@ -22,6 +22,7 @@
         }
 
         header {
+            padding: 32px 0;
             text-align: center;
         }
 
@@ -53,7 +54,7 @@
         }
 
         ::selection {
-            color: orange;
+            color: gold;
             background: firebrick;
         } 
 
@@ -65,6 +66,20 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 10px;
+        }
+
+        .github {
+            text-align: center;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 16px 32px;
+            background: maroon;
+            border-radius: 8px;
+            color: white;
+            text-decoration: none;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
         }
     </style>
 </head>
@@ -79,16 +94,22 @@
             <h2 id="getting-started">Getting Started</h2>
             <h3 id="installation">Installation</h3>
 
-            <a href="https://github.com/gw2ocs/gw2icon" class="btn">View the project on Github</a>
+            <p class="github">
+                <a href="https://github.com/gw2ocs/gw2icon" class="btn">View the project on Github</a>
+            </p>
 
-            Put `css/gw2icon.min.css` in your `css/` folder and `img/gw2icon/` in your `img/` folder.
-            Then, in your header, just add:
+            <p>
+                Put `css/gw2icon.min.css` in your `css/` folder and `img/gw2icon/` in your `img/` folder.
+                Then, in your header, just add:
+            </p>
 
             <pre><code class="html">&lt;link rel="stylesheet" href="/path/to/css/gw2icon.min.css" /></code></pre>
             
             <h3 id="usage">Usage</h3>
 
-            To include an icon in your page, write:
+            <p>
+                To include an icon in your page, write:
+            </p>
 
             <pre><code class="html">&lt;i class="gw2-gold-coin">&lt;/i></code></pre>
             
