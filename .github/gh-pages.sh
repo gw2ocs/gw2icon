@@ -1,6 +1,7 @@
 #!/bin/sh
 
-curl -v -H "Authorization: token $GITHUB_TOKEN" https://github.com
+git remote rm origin
+git remote add origin https://Pandraghon:${GITHUB_TOKEN}@github.com/gw2ocs/gw2icon.git
 git checkout -b gh-pages origin/gh-pages
 git clean -fdx
 rm -rf img
