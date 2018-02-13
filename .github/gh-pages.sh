@@ -17,6 +17,6 @@ mv build/css/gw2icon.min.css css/
 mv build/img/gw2icon img/
 rm -rf build
 git add .
-git commit -m "Update docs"
+git commit -m "Update docs $TRAVIS_COMMIT"
 git push origin HEAD:gh-pages
 git checkout master
