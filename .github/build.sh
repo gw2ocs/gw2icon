@@ -4,6 +4,7 @@ git remote rm origin
 git remote add origin https://Pandraghon:${GITHUB_TOKEN}@github.com/gw2ocs/gw2icon.git
 git fetch
 git checkout build
+git rev-parse --abbrev-ref HEAD
 git clean -fdx
 rm -rf img
 rm -rf css
