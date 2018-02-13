@@ -12,7 +12,10 @@ git checkout master -- build/*
 mv build/* .
 rm -rf build
 rm css/gw2icon.min.css.map
+git rev-parse --abbrev-ref HEAD
 git add .
+git rev-parse --abbrev-ref HEAD
 git commit -m "Update build $TRAVIS_COMMIT"
+git rev-parse --abbrev-ref HEAD
 git push origin HEAD:build
 git checkout master
