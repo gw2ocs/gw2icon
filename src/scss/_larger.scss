@@ -2,5 +2,5 @@
 // ----------
 
 @for $i from 2 through 5 {
-  .#{$gw2-css-prefix}-#{$i}x { font-size: #{$i}em; }
+	.#{$gw2-css-prefix}-#{$i}x { font-size: #{$i}em; }
 }

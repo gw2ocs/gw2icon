@@ -3,8 +3,8 @@ $file-width: 24;
 $file-name: 'currencies.png';
 
 %gw2-currencies {
-    background: url('#{$gw2-img-path}#{$file-name}') no-repeat;
-    background-size: 1em #{$file-height / $file-width}em;
+	background: url('#{$gw2-img-path}#{$file-name}') no-repeat;
+	background-size: 1em #{$file-height / $file-width}em;
 }
 
 .#{$gw2-css-prefix}-hero-point { @extend %gw2-currencies; @include gw2-iconify(0, 0, 24, 24); }

@@ -2,26 +2,26 @@
 // ------
 
 %gw2-icon {
-    display: inline-block;
-    font-size: inherit;
-    overflow: hidden;
-    text-align: left;
-    box-sizing: border-box;
+	display: inline-block;
+	font-size: inherit;
+	text-align: left;
+	overflow: hidden;
+	box-sizing: border-box;
 }
 
 @mixin gw2-iconify($x, $y, $width, $height) {
-    @extend %gw2-icon;
-    background-position: -#{$x / $file-width}em -#{$y / $file-width}em;
-    width: #{$width / $file-width}em;
-    padding-bottom: #{$height / $file-width}em;
+	@extend %gw2-icon;
+	width: #{$width / $file-width}em;
+	padding-bottom: #{$height / $file-width}em;
+	background-position: -#{$x / $file-width}em -#{$y / $file-width}em;
 }
 
 @mixin gw2-icon-rotate($degrees, $rotation) {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})";
-  transform: rotate($degrees);
+	transform: rotate($degrees);
+	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})';
 }
 
 @mixin gw2-icon-flip($horiz, $vert, $rotation) {
-  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation}, mirror=1)";
-  transform: scale($horiz, $vert);
+	transform: scale($horiz, $vert);
+	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation}, mirror=1)';
 }
