@@ -1,0 +1,30 @@
+{
+  "name": "gw2icon",
+  "version": "0.1.0",
+  "description": "Library to insert GW2's icons in your website in pure CSS3.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass-lint": "sass-lint --verbose --no-exit",
+    "test": "npm run sass-lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gw2ocs/gw2icon.git"
+  },
+  "keywords": [
+    "gw2",
+    "font-icon"
+  ],
+  "author": "Pandraghon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gw2ocs/gw2icon/issues"
+  },
+  "homepage": "https://github.com/gw2ocs/gw2icon#readme",
+  "devDependencies": {
+    "sass-lint": "^1.12.1"
+  }
+}

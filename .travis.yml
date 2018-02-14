@@ -1,5 +1,14 @@
-language: bash
-
-script:
-    - bash .github/gh-pages.sh
-    - bash .github/build.sh
+language: node_js
+node_js:
+  - "8"
+install: npm install
+jobs:
+  include:
+    - stage: test
+      script: npm test
+    - stage: deploy
+      script: bash .github/gh-pages.sh
+    - script: bash .github/build.sh
+cache:
+  directories:
+    - node_modules
