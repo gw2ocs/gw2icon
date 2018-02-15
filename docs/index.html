@@ -12,17 +12,20 @@
         @import url('https://fonts.googleapis.com/css?family=Lato');
 
         body {
-            background-color: #651411;
-            background-image: url(img/texture_fire2_s.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            color: white;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+            margin: 0;
+            padding: 0;
             font-family: 'Lato', sans-serif; 
         }
 
         header {
-            padding: 32px 0;
+            background-color: #651411;
+            background-image: url(img/texture_fire2_s.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center 35%;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+            padding: 64px 0;
             text-align: center;
         }
 
@@ -49,11 +52,11 @@
         }
 
         code {
-            background-color: rgba(0, 0, 0, .4);
+            background-color: rgba(0, 0, 0, .05);
         }
 
         strong {
-            color: gold;
+            color: goldenrod;
         }
 
         ::-moz-selection {
@@ -96,15 +99,14 @@
         <i class="gw2-hero-point gw2-3x"></i>
         <h1>GW2Icon</h1>
         <p>Library to insert GW2's icons in your webpages in pure CSS3.</p>
+        <p class="download">
+            <a href="https://github.com/gw2ocs/gw2icon/archive/build.zip" class="btn" download="gw2icon.zip">Download</a>
+        </p>
     </header>
     <main>
         <section>
             <h2 id="getting-started">Getting Started</h2>
             <h3 id="installation">Installation</h3>
-
-            <p class="download">
-                <a href="https://github.com/gw2ocs/gw2icon/archive/build.zip" class="btn" download="gw2icon.zip">Download</a>
-            </p>
 
             <p>
                 Put <code>css/gw2icon.min.css</code> in your <code>css/</code> folder and <code>img/gw2icon/</code> in your <code>img/</code> folder.
