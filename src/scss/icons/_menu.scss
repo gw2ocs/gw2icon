@@ -1,0 +1,53 @@
+$gw2-menu-file-height: 256;
+$gw2-menu-file-width: 192;
+$gw2-menu-file-name: 'menu.png';
+
+%gw2-currencies {
+  background: url('#{$gw2-img-path}#{$gw2-menu-file-name}') no-repeat;
+}
+
+.#{$gw2-css-prefix}-black-lion-menu-bar { @extend %gw2-currencies; @include gw2-iconify(0, 0, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-black-lion-panel-currency-exchange { @extend %gw2-currencies; @include gw2-iconify(32, 0, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-black-lion-panel-gem-store { @extend %gw2-currencies; @include gw2-iconify(64, 0, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-black-lion-panel-trading-post { @extend %gw2-currencies; @include gw2-iconify(96, 0, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-contacts-menu-bar { @extend %gw2-currencies; @include gw2-iconify(128, 0, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-contacts-panel-blocked { @extend %gw2-currencies; @include gw2-iconify(160, 0, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-contacts-panel-followers { @extend %gw2-currencies; @include gw2-iconify(0, 32, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-contacts-panel-friends { @extend %gw2-currencies; @include gw2-iconify(32, 32, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-contacts-panel-lfg { @extend %gw2-currencies; @include gw2-iconify(64, 32, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-game-menu-edit-account { @extend %gw2-currencies; @include gw2-iconify(96, 32, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-game-menu-exit { @extend %gw2-currencies; @include gw2-iconify(128, 32, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-game-menu-log-out { @extend %gw2-currencies; @include gw2-iconify(160, 32, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-game-menu-options { @extend %gw2-currencies; @include gw2-iconify(0, 64, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-game-menu-return { @extend %gw2-currencies; @include gw2-iconify(32, 64, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-game-menu-support { @extend %gw2-currencies; @include gw2-iconify(64, 64, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-guild-panel-main { @extend %gw2-currencies; @include gw2-iconify(96, 64, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-guild-panel-menu-bar { @extend %gw2-currencies; @include gw2-iconify(128, 64, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-guild-panel-missions { @extend %gw2-currencies; @include gw2-iconify(160, 64, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-guild-panel-ranks { @extend %gw2-currencies; @include gw2-iconify(0, 96, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-guild-panel-roster { @extend %gw2-currencies; @include gw2-iconify(32, 96, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-guild-panel-storage { @extend %gw2-currencies; @include gw2-iconify(64, 96, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-guild-panel-teams { @extend %gw2-currencies; @include gw2-iconify(96, 96, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-hero-panel-achievements { @extend %gw2-currencies; @include gw2-iconify(128, 96, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-hero-panel-build { @extend %gw2-currencies; @include gw2-iconify(160, 96, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-hero-panel-crafting { @extend %gw2-currencies; @include gw2-iconify(0, 128, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-hero-panel-equipment { @extend %gw2-currencies; @include gw2-iconify(32, 128, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-hero-panel-masteries { @extend %gw2-currencies; @include gw2-iconify(64, 128, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-hero-panel-menu-bar { @extend %gw2-currencies; @include gw2-iconify(96, 128, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-hero-panel-story-journal { @extend %gw2-currencies; @include gw2-iconify(128, 128, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-hero-panel-training { @extend %gw2-currencies; @include gw2-iconify(160, 128, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-inventory-menu-bar { @extend %gw2-currencies; @include gw2-iconify(0, 160, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-mail-menu-bar { @extend %gw2-currencies; @include gw2-iconify(32, 160, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-options-menu-bar { @extend %gw2-currencies; @include gw2-iconify(64, 160, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-pvp-menu-bar { @extend %gw2-currencies; @include gw2-iconify(96, 160, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-pvp-panel-custom-arena { @extend %gw2-currencies; @include gw2-iconify(128, 160, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-pvp-panel-game-browser { @extend %gw2-currencies; @include gw2-iconify(160, 160, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-pvp-panel-home { @extend %gw2-currencies; @include gw2-iconify(0, 192, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-pvp-panel-league { @extend %gw2-currencies; @include gw2-iconify(32, 192, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-pvp-panel-reward-tracks { @extend %gw2-currencies; @include gw2-iconify(64, 192, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-support-panel-bug-report { @extend %gw2-currencies; @include gw2-iconify(96, 192, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-support-panel-main { @extend %gw2-currencies; @include gw2-iconify(128, 192, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-wvw-menu-bar { @extend %gw2-currencies; @include gw2-iconify(160, 192, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-wvw-panel-detailed-score { @extend %gw2-currencies; @include gw2-iconify(0, 224, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-wvw-panel-mist-war { @extend %gw2-currencies; @include gw2-iconify(32, 224, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
+.#{$gw2-css-prefix}-wvw-panel-rank-and-abilities { @extend %gw2-currencies; @include gw2-iconify(64, 224, 32, 32, $gw2-menu-file-width, $gw2-menu-file-height); }
