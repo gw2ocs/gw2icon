@@ -9,11 +9,12 @@
 	box-sizing: border-box;
 }
 
-@mixin gw2-iconify($x, $y, $width, $height) {
+@mixin gw2-iconify($x, $y, $width, $height, $file-width, $file-height) {
 	@extend %gw2-icon;
-	width: #{$width / $file-width}em;
-	padding-bottom: #{$height / $file-width}em;
-	background-position: -#{$x / $file-width}em -#{$y / $file-width}em;
+	height: $gw2-icon-height;
+	padding-right: #{$gw2-icon-height * $width / $height};
+	background-position: #{$x / ($file-width - $width) * 100%} #{$y / ($file-height - $height) * 100%};
+	background-size: #{$file-width * $gw2-icon-height / $height} #{$file-height * $gw2-icon-height / $height};
 }
 
 @mixin gw2-icon-rotate($degrees, $rotation) {
