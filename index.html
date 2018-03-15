@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: 
-http://ogp.me/ns/article#">
+<head lang="en" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -22,7 +21,7 @@ http://ogp.me/ns/article#">
     <meta property="og:url" content=" https://gw2ocs.github.io/gw2icon/" />
     <meta property="og:description" content="Library to insert GW2's icons in your webpages in pure CSS3." />
     <meta property="og:site_name" content="GW2Icon" />
-    
+
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:title" content="GW2Icon" />
@@ -45,7 +44,7 @@ http://ogp.me/ns/article#">
         body {
             margin: 0;
             padding: 0;
-            font-family: 'Lato', sans-serif; 
+            font-family: 'Lato', sans-serif;
         }
 
         header {
@@ -83,8 +82,24 @@ http://ogp.me/ns/article#">
             border-top: 1px solid white;
         }
 
+        aside {
+            margin: 32px 0;
+        }
+
         h1, h2, h3, h4, h5, h6 {
             font-family: 'Cagliostro', sans-serif;
+        }
+
+        h2 {
+            color: orange;
+        }
+
+        h4 {
+            color: tomato;
+        }
+
+        h3 {
+            color: darkorange;
         }
 
         code {
@@ -103,7 +118,7 @@ http://ogp.me/ns/article#">
         ::selection {
             color: gold;
             background: firebrick;
-        } 
+        }
 
         .hljs {
             padding: 1em;
@@ -150,7 +165,7 @@ http://ogp.me/ns/article#">
             </p>
 
             <pre><code class="html">&lt;link rel="stylesheet" href="/path/to/css/gw2icon.min.css" /></code></pre>
-            
+
             <h3 id="usage">Usage</h3>
 
             <p>
@@ -158,7 +173,7 @@ http://ogp.me/ns/article#">
             </p>
 
             <pre><code class="html">&lt;i class="gw2-gold-coin">&lt;/i></code></pre>
-            
+
         </section>
         <section>
             <h2 id="icons">Icons</h2>
@@ -234,62 +249,98 @@ http://ogp.me/ns/article#">
                 <div><i class="gw2-influence"></i> influence</div>
             </div>
 
+
             <h3 id="currencies">Menu</h3>
+            <h4 id="menu-bar">Menu Bar</h4>
             <div class="wrapper">
-                <div><i class="gw2-black-lion-menu-bar"></i> black-lion-menu-bar</div>
-                <div><i class="gw2-black-lion-panel-currency-exchange"></i> black-lion-panel-currency-exchange</div>
-                <div><i class="gw2-black-lion-panel-gem-store"></i> black-lion-panel-gem-store</div>
-                <div><i class="gw2-black-lion-panel-trading-post"></i> black-lion-panel-trading-post</div>
+                <div><i class="gw2-options-menu-bar"></i> options-menu-bar</div>
                 <div><i class="gw2-contacts-menu-bar"></i> contacts-menu-bar</div>
-                <div><i class="gw2-contacts-panel-blocked"></i> contacts-panel-blocked</div>
-                <div><i class="gw2-contacts-panel-followers"></i> contacts-panel-followers</div>
-                <div><i class="gw2-contacts-panel-friends"></i> contacts-panel-friends</div>
-                <div><i class="gw2-contacts-panel-lfg"></i> contacts-panel-lfg</div>
-                <div><i class="gw2-game-menu-edit-account"></i> game-menu-edit-account</div>
-                <div><i class="gw2-game-menu-exit"></i> game-menu-exit</div>
-                <div><i class="gw2-game-menu-log-out"></i> game-menu-log-out</div>
-                <div><i class="gw2-game-menu-options"></i> game-menu-options</div>
-                <div><i class="gw2-game-menu-return"></i> game-menu-return</div>
-                <div><i class="gw2-game-menu-support"></i> game-menu-support</div>
-                <div><i class="gw2-guild-panel-main"></i> guild-panel-main</div>
-                <div><i class="gw2-guild-panel-menu-bar"></i> guild-panel-menu-bar</div>
-                <div><i class="gw2-guild-panel-missions"></i> guild-panel-missions</div>
-                <div><i class="gw2-guild-panel-ranks"></i> guild-panel-ranks</div>
-                <div><i class="gw2-guild-panel-roster"></i> guild-panel-roster</div>
-                <div><i class="gw2-guild-panel-storage"></i> guild-panel-storage</div>
-                <div><i class="gw2-guild-panel-teams"></i> guild-panel-teams</div>
-                <div><i class="gw2-hero-panel-achievements"></i> hero-panel-achievements</div>
-                <div><i class="gw2-hero-panel-build"></i> hero-panel-build</div>
-                <div><i class="gw2-hero-panel-crafting"></i> hero-panel-crafting</div>
-                <div><i class="gw2-hero-panel-equipment"></i> hero-panel-equipment</div>
-                <div><i class="gw2-hero-panel-masteries"></i> hero-panel-masteries</div>
                 <div><i class="gw2-hero-panel-menu-bar"></i> hero-panel-menu-bar</div>
-                <div><i class="gw2-hero-panel-story-journal"></i> hero-panel-story-journal</div>
-                <div><i class="gw2-hero-panel-training"></i> hero-panel-training</div>
                 <div><i class="gw2-inventory-menu-bar"></i> inventory-menu-bar</div>
                 <div><i class="gw2-mail-menu-bar"></i> mail-menu-bar</div>
-                <div><i class="gw2-options-menu-bar"></i> options-menu-bar</div>
+                <div><i class="gw2-black-lion-menu-bar"></i> black-lion-menu-bar</div>
+                <div><i class="gw2-guild-panel-menu-bar"></i> guild-panel-menu-bar</div>
+                <div><i class="gw2-wvw-menu-bar"></i> wvw-menu-bar</div>
                 <div><i class="gw2-pvp-menu-bar"></i> pvp-menu-bar</div>
-                <div><i class="gw2-pvp-panel-custom-arena"></i> pvp-panel-custom-arena</div>
-                <div><i class="gw2-pvp-panel-game-browser"></i> pvp-panel-game-browser</div>
+            </div>
+
+            <h4 id="game-menu">Game Menu</h4>
+            <div class="wrapper">
+                <div><i class="gw2-game-menu-return"></i> game-menu-return</div>
+                <div><i class="gw2-game-menu-options"></i> game-menu-options</div>
+                <div><i class="gw2-game-menu-edit-account"></i> game-menu-edit-account</div>
+                <div><i class="gw2-game-menu-support"></i> game-menu-support</div>
+                <div><i class="gw2-game-menu-log-out"></i> game-menu-log-out</div>
+                <div><i class="gw2-game-menu-exit"></i> game-menu-exit</div>
+            </div>
+
+            <h4 id="support">Support</h4>
+            <div class="wrapper">
+                <div><i class="gw2-support-panel-main"></i> support-panel-main</div>
+                <div><i class="gw2-support-panel-bug-report"></i> support-panel-bug-report</div>
+            </div>
+
+            <h4 id="contacts">Contacts and LFG</h4>
+            <div class="wrapper">
+                <div><i class="gw2-contacts-panel-friends"></i> contacts-panel-friends</div>
+                <div><i class="gw2-contacts-panel-lfg"></i> contacts-panel-lfg</div>
+                <div><i class="gw2-contacts-panel-followers"></i> contacts-panel-followers</div>
+                <div><i class="gw2-contacts-panel-blocked"></i> contacts-panel-blocked</div>
+            </div>
+
+            <h4 id="hero">Hero</h4>
+            <div class="wrapper">
+                <div><i class="gw2-hero-panel-equipment"></i> hero-panel-equipment</div>
+                <div><i class="gw2-hero-panel-build"></i> hero-panel-build</div>
+                <div><i class="gw2-hero-panel-training"></i> hero-panel-training</div>
+                <div><i class="gw2-hero-panel-story-journal"></i> hero-panel-story-journal</div>
+                <div><i class="gw2-hero-panel-crafting"></i> hero-panel-crafting</div>
+                <div><i class="gw2-hero-panel-achievements"></i> hero-panel-achievements</div>
+                <div><i class="gw2-hero-panel-masteries"></i> hero-panel-masteries</div>
+            </div>
+
+            <h4 id="black-lion">Black Lion Trading Company</h4>
+            <div class="wrapper">
+                <div><i class="gw2-black-lion-panel-gem-store"></i> black-lion-panel-gem-store</div>
+                <div><i class="gw2-black-lion-panel-currency-exchange"></i> black-lion-panel-currency-exchange</div>
+                <div><i class="gw2-black-lion-panel-trading-post"></i> black-lion-panel-trading-post</div>
+            </div>
+
+            <h4 id="guild">Guild</h4>
+            <div class="wrapper">
+                <div><i class="gw2-guild-panel-main"></i> guild-panel-main</div>
+                <div><i class="gw2-guild-panel-roster"></i> guild-panel-roster</div>
+                <div><i class="gw2-guild-panel-missions"></i> guild-panel-missions</div>
+                <div><i class="gw2-guild-panel-teams"></i> guild-panel-teams</div>
+                <div><i class="gw2-guild-panel-storage"></i> guild-panel-storage</div>
+                <div><i class="gw2-guild-panel-history"></i> guild-panel-history</div>
+                <div><i class="gw2-guild-panel-ranks"></i> guild-panel-ranks</div>
+            </div>
+
+            <h4 id="wvw">World vs. World</h4>
+            <div class="wrapper">
+                <div><i class="gw2-wvw-panel-mist-war"></i> wvw-panel-mist-war</div>
+                <div><i class="gw2-wvw-panel-detailed-score"></i> wvw-panel-detailed-score</div>
+                <div><i class="gw2-wvw-panel-reward-tracks"></i> wvw-panel-reward-tracks</div>
+                <div><i class="gw2-wvw-panel-rank-and-abilities"></i> wvw-panel-rank-and-abilities</div>
+            </div>
+
+            <h4 id="pvp">Player vs. Player</h4>
+            <div class="wrapper">
                 <div><i class="gw2-pvp-panel-home"></i> pvp-panel-home</div>
                 <div><i class="gw2-pvp-panel-league"></i> pvp-panel-league</div>
                 <div><i class="gw2-pvp-panel-reward-tracks"></i> pvp-panel-reward-tracks</div>
-                <div><i class="gw2-support-panel-bug-report"></i> support-panel-bug-report</div>
-                <div><i class="gw2-support-panel-main"></i> support-panel-main</div>
-                <div><i class="gw2-wvw-menu-bar"></i> wvw-menu-bar</div>
-                <div><i class="gw2-wvw-panel-detailed-score"></i> wvw-panel-detailed-score</div>
-                <div><i class="gw2-wvw-panel-mist-war"></i> wvw-panel-mist-war</div>
-                <div><i class="gw2-wvw-panel-rank-and-abilities"></i> wvw-panel-rank-and-abilities</div>
+                <div><i class="gw2-pvp-panel-game-browser"></i> pvp-panel-game-browser</div>
+                <div><i class="gw2-pvp-panel-custom-arena"></i> pvp-panel-custom-arena</div>
             </div>
         </section>
     </main>
 
     <aside>
-        <iframe 
-            src="https://www.instant-gaming.com/affgames/igr552943/296x200?prod_ids=141,711,2220" 
-            scrolling="no" frameborder="0" 
-            style="display: block; border: 1px solid #ccc; border-radius: 5px; overflow:hidden; width:296px; height:200px; margin: 16px auto;" 
+        <iframe
+            src="https://www.instant-gaming.com/affgames/igr552943/296x200?prod_ids=141,711,2220"
+            scrolling="no" frameborder="0"
+            style="display: block; border: 1px solid #ccc; border-radius:5px; overflow:hidden; width:296px; height:200px; margin:auto;"
             allowTransparency="true"></iframe>
     </aside>
 
