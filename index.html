@@ -41,9 +41,14 @@
         @import url('https://fonts.googleapis.com/css?family=Cagliostro');
         @import url('https://fonts.googleapis.com/css?family=Lato');
 
+        html {
+            min-height: 100%;
+        }
+
         body {
             margin: 0;
             padding: 0;
+            min-height: 100%;
             font-family: 'Lato', sans-serif;
         }
 
@@ -68,8 +73,23 @@
         }
 
         footer {
-            text-align: center;
+            display: flex;
             padding: 10px 0;
+            margin-top: -160px;
+            height: 300px;
+            align-items: center;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: white;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+            background-image: url(img/Bottom_Graphics.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+        }
+
+        footer p {
+            margin: 0;
         }
 
         main {
@@ -91,15 +111,16 @@
         }
 
         h2 {
-            color: orange;
-        }
-
-        h4 {
             color: tomato;
+            font-variant-caps: small-caps;
         }
 
         h3 {
             color: darkorange;
+        }
+
+        h4 {
+            color: orange;
         }
 
         code {
@@ -351,7 +372,7 @@
             <iframe src="https://ghbtns.com/github-btn.html?user=gw2ocs&repo=gw2icon&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
         </p>
         <p>Icons and background are © 2015 ArenaNet, Inc. All rights reserved.</p>
-        <p>Made with <i class="gw2-karma"></i> by <strong>Pandraghon#3647</stronng>.</p>
+        <p>Made with <i class="gw2-karma"></i> by <strong>Pandraghon#3647</strong>.</p>
     </footer>
 
     <script src="js/highlight.pack.js"></script>
