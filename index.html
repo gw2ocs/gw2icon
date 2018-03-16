@@ -164,6 +164,18 @@
             text-decoration: none;
             box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
         }
+
+        .anchor {
+            display: none;
+            text-decoration: none;
+            color: rgba(150, 150, 150, .5);
+        }
+
+        h2:hover .anchor,
+        h3:hover .anchor,
+        h4:hover .anchor {
+            display: inline;
+        }
     </style>
 </head>
 <body>
@@ -177,8 +189,8 @@
     </header>
     <main>
         <section>
-            <h2 id="getting-started">Getting Started</h2>
-            <h3 id="installation">Installation</h3>
+            <h2 id="getting-started">Getting Started <a class="anchor" href="#getting-started">#</a></h2>
+            <h3 id="installation">Installation <a class="anchor" href="#installation">#</a></h3>
 
             <p>
                 Put <code>css/gw2icon.min.css</code> in your <code>css/</code> folder and <code>img/gw2icon/</code> in your <code>img/</code> folder.
@@ -187,7 +199,7 @@
 
             <pre><code class="html">&lt;link rel="stylesheet" href="/path/to/css/gw2icon.min.css" /></code></pre>
 
-            <h3 id="usage">Usage</h3>
+            <h3 id="usage">Usage <a class="anchor" href="#usage">#</a></h3>
 
             <p>
                 To include an icon in your page, write:
@@ -197,9 +209,9 @@
 
         </section>
         <section>
-            <h2 id="icons">Icons</h2>
-            <h3 id="currencies">Currencies</h3>
-            <h4 id="currencies-general">General Currencies</h4>
+            <h2 id="icons">Icons <a class="anchor" href="#icons">#</a></h2>
+            <h3 id="currencies">Currencies <a class="anchor" href="#currencies">#</a></h3>
+            <h4 id="currencies-general">General Currencies <a class="anchor" href="#currencies-general">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-gold-coin"></i> gold-coin</div>
                 <div><i class="gw2-silver-coin"></i> silver-coin</div>
@@ -212,7 +224,7 @@
                 <div><i class="gw2-transmutation-charge"></i> transmutation-charge</div>
             </div>
 
-            <h4 id="currencies-competitive">Competitive Currencies</h4>
+            <h4 id="currencies-competitive">Competitive Currencies <a class="anchor" href="#currencies-competitive">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-badge-of-honor"></i> badge-of-honor</div>
                 <div><i class="gw2-wvw-tournament-claim-ticket"></i> wvw-tournament-claim-ticket</div>
@@ -222,7 +234,7 @@
                 <div><i class="gw2-ascended-shard-of-glory"></i> ascended-shard-of-glory</div>
             </div>
 
-            <h4 id="currencies-map">Map Currencies</h4>
+            <h4 id="currencies-map">Map Currencies <a class="anchor" href="#currencies-map">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-geode"></i> geode</div>
                 <div><i class="gw2-bandit-crest"></i> bandit-crest</div>
@@ -238,7 +250,7 @@
                 <div><i class="gw2-volatile-magic"></i> volatile-magic</div>
             </div>
 
-            <h4 id="currencies-keys">Keys</h4>
+            <h4 id="currencies-keys">Keys <a class="anchor" href="#currencies-keys">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-zephyrite-lockpick"></i> zephyrite-lockpick</div>
                 <div><i class="gw2-bandit-skeleton-key"></i> bandit-skeleton-key</div>
@@ -249,7 +261,7 @@
                 <div><i class="gw2-trader-key"></i> trader-key</div>
             </div>
 
-            <h4 id="currencies-dungeon">Dungeon Currencies</h4>
+            <h4 id="currencies-dungeon">Dungeon Currencies <a class="anchor" href="#currencies-dungeon">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-fractal-relic"></i> fractal-relic</div>
                 <div><i class="gw2-pristine-fractal-relic"></i> pristine-fractal-relic</div>
@@ -263,7 +275,7 @@
                 <div><i class="gw2-shard-of-zhaitan"></i> shard-of-zhaitan</div>
             </div>
 
-            <h4 id="currencies-guild">Guild Currencies</h4>
+            <h4 id="currencies-guild">Guild Currencies <a class="anchor" href="#currencies-guild">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-aetherium"></i> aetherium</div>
                 <div><i class="gw2-favor"></i> favor</div>
@@ -271,8 +283,8 @@
             </div>
 
 
-            <h3 id="currencies">Menu</h3>
-            <h4 id="menu-bar">Menu Bar</h4>
+            <h3 id="menu">Menu <a class="anchor" href="#menu">#</a></h3>
+            <h4 id="menu-bar">Menu Bar <a class="anchor" href="#menu-bar">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-options-menu-bar"></i> options-menu-bar</div>
                 <div><i class="gw2-contacts-menu-bar"></i> contacts-menu-bar</div>
@@ -285,7 +297,7 @@
                 <div><i class="gw2-pvp-menu-bar"></i> pvp-menu-bar</div>
             </div>
 
-            <h4 id="game-menu">Game Menu</h4>
+            <h4 id="menu-game">Game Menu <a class="anchor" href="#menu-game">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-game-menu-return"></i> game-menu-return</div>
                 <div><i class="gw2-game-menu-options"></i> game-menu-options</div>
@@ -295,13 +307,13 @@
                 <div><i class="gw2-game-menu-exit"></i> game-menu-exit</div>
             </div>
 
-            <h4 id="support">Support</h4>
+            <h4 id="menu-support">Support <a class="anchor" href="#menu-support">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-support-panel-main"></i> support-panel-main</div>
                 <div><i class="gw2-support-panel-bug-report"></i> support-panel-bug-report</div>
             </div>
 
-            <h4 id="contacts">Contacts and LFG</h4>
+            <h4 id="menu-contacts">Contacts and LFG <a class="anchor" href="#menu-contacts">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-contacts-panel-friends"></i> contacts-panel-friends</div>
                 <div><i class="gw2-contacts-panel-lfg"></i> contacts-panel-lfg</div>
@@ -309,7 +321,7 @@
                 <div><i class="gw2-contacts-panel-blocked"></i> contacts-panel-blocked</div>
             </div>
 
-            <h4 id="hero">Hero</h4>
+            <h4 id="menu-hero">Hero <a class="anchor" href="#menu-hero">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-hero-panel-equipment"></i> hero-panel-equipment</div>
                 <div><i class="gw2-hero-panel-build"></i> hero-panel-build</div>
@@ -320,14 +332,14 @@
                 <div><i class="gw2-hero-panel-masteries"></i> hero-panel-masteries</div>
             </div>
 
-            <h4 id="black-lion">Black Lion Trading Company</h4>
+            <h4 id="menu-black-lion">Black Lion Trading Company <a class="anchor" href="#menu-black-lion">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-black-lion-panel-gem-store"></i> black-lion-panel-gem-store</div>
                 <div><i class="gw2-black-lion-panel-currency-exchange"></i> black-lion-panel-currency-exchange</div>
                 <div><i class="gw2-black-lion-panel-trading-post"></i> black-lion-panel-trading-post</div>
             </div>
 
-            <h4 id="guild">Guild</h4>
+            <h4 id="menu-guild">Guild <a class="anchor" href="#menu-guild">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-guild-panel-main"></i> guild-panel-main</div>
                 <div><i class="gw2-guild-panel-roster"></i> guild-panel-roster</div>
@@ -338,7 +350,7 @@
                 <div><i class="gw2-guild-panel-ranks"></i> guild-panel-ranks</div>
             </div>
 
-            <h4 id="wvw">World vs. World</h4>
+            <h4 id="menu-wvw">World vs. World <a class="anchor" href="#menu-wvw">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-wvw-panel-mist-war"></i> wvw-panel-mist-war</div>
                 <div><i class="gw2-wvw-panel-detailed-score"></i> wvw-panel-detailed-score</div>
@@ -346,7 +358,7 @@
                 <div><i class="gw2-wvw-panel-rank-and-abilities"></i> wvw-panel-rank-and-abilities</div>
             </div>
 
-            <h4 id="pvp">Player vs. Player</h4>
+            <h4 id="menu-pvp">Player vs. Player <a class="anchor" href="#menu-pvp">#</a></h4>
             <div class="wrapper">
                 <div><i class="gw2-pvp-panel-home"></i> pvp-panel-home</div>
                 <div><i class="gw2-pvp-panel-league"></i> pvp-panel-league</div>
