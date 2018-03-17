@@ -193,6 +193,10 @@
         h4:hover .anchor {
             display: inline;
         }
+
+        .hidden {
+            display: none;
+        }
     </style>
 </head>
 <body>
@@ -416,13 +420,23 @@
         (function() {
             const input = document.getElementById('search');
             const icons = document.querySelectorAll('.wrapper>div>i');
+            const categsH3 = document.querySelectorAll('article > h3');
+            const categsH4 = document.querySelectorAll('article > h4');
 
             const filter = function() {
                 const search = input.value;
                 const re = new RegExp(search);
                 for (let i = 0, ilen = icons.length ; i < ilen ; i++) {
                     const icon = icons[i];
-                    icon.parentNode.style.display = re.test(icon.className) ? 'inline' : 'none';
+                    icon.parentNode.classList.toggle('hidden', !re.test(icon.className));
+                }
+                for (let i = 0, ilen = categsH3.length ; i < ilen ; i++) {
+                    const categ = categsH3[i];
+                    categ.classList.toggle('hidden', !categ.parentNode.querySelectorAll('.wrapper>div:not(.hidden)').length);
+                }
+                for (let i = 0, ilen = categsH4.length ; i < ilen ; i++) {
+                    const categ = categsH4[i];
+                    categ.classList.toggle('hidden', !categ.nextElementSibling.querySelectorAll('div:not(.hidden)').length);
                 }
             }
 
