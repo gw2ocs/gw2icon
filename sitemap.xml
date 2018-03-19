@@ -1,6 +1,9 @@
-<urlset xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://gw2ocs.github.io/gw2icon/</loc>
-        <lastmod>2018-03-17T15:34:56+00:00</lastmod>
+        <lastmod>2018-03-19</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
     </url>
-</urlset>
+</urlset> 
