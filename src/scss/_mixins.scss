@@ -13,7 +13,7 @@
 	@extend %gw2-icon;
 	height: $gw2-icon-height;
 	padding-right: #{$gw2-icon-height * $width / $height};
-	background-position: #{$x / ($file-width - $width) * 100%} #{$y / ($file-height - $height) * 100%};
+	background-position: #{if($file-width == $width, 0, $x / ($file-width - $width)) * 100%} #{if($file-height == $height, 0, $y / ($file-height - $height)) * 100%};
 	background-size: #{$file-width * $gw2-icon-height / $height} #{$file-height * $gw2-icon-height / $height};
 }
 
