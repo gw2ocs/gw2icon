@@ -1,0 +1,49 @@
+$gw2-characters-file-height: 336;
+$gw2-characters-file-width: 288;
+$gw2-characters-file-name: 'characters.png';
+
+%gw2-characters {
+	background: url('#{$gw2-img-path}#{$gw2-characters-file-name}') no-repeat;
+}
+
+.#{$gw2-css-prefix}-armorsmith { @extend %gw2-characters; @include gw2-iconify(0, 0, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-artificer { @extend %gw2-characters; @include gw2-iconify(48, 0, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-asura { @extend %gw2-characters; @include gw2-iconify(96, 0, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-berserker { @extend %gw2-characters; @include gw2-iconify(144, 0, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-charr { @extend %gw2-characters; @include gw2-iconify(192, 0, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-chef { @extend %gw2-characters; @include gw2-iconify(240, 0, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-chronomancer { @extend %gw2-characters; @include gw2-iconify(0, 48, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-daredevil { @extend %gw2-characters; @include gw2-iconify(48, 48, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-deadeye { @extend %gw2-characters; @include gw2-iconify(96, 48, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-dragonhunter { @extend %gw2-characters; @include gw2-iconify(144, 48, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-druid { @extend %gw2-characters; @include gw2-iconify(192, 48, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-elementalist { @extend %gw2-characters; @include gw2-iconify(240, 48, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-engineer { @extend %gw2-characters; @include gw2-iconify(0, 96, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-fireband { @extend %gw2-characters; @include gw2-iconify(48, 96, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-guardian { @extend %gw2-characters; @include gw2-iconify(96, 96, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-herald { @extend %gw2-characters; @include gw2-iconify(144, 96, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-holosmith { @extend %gw2-characters; @include gw2-iconify(192, 96, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-human { @extend %gw2-characters; @include gw2-iconify(240, 96, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-huntsman { @extend %gw2-characters; @include gw2-iconify(0, 144, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-jeweler { @extend %gw2-characters; @include gw2-iconify(48, 144, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-leatherworker { @extend %gw2-characters; @include gw2-iconify(96, 144, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-mesmer { @extend %gw2-characters; @include gw2-iconify(144, 144, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-mirage { @extend %gw2-characters; @include gw2-iconify(192, 144, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-necromancer { @extend %gw2-characters; @include gw2-iconify(240, 144, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-norn { @extend %gw2-characters; @include gw2-iconify(0, 192, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-ranger { @extend %gw2-characters; @include gw2-iconify(48, 192, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-reaper { @extend %gw2-characters; @include gw2-iconify(96, 192, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-renegade { @extend %gw2-characters; @include gw2-iconify(144, 192, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-revenant { @extend %gw2-characters; @include gw2-iconify(192, 192, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-scourge { @extend %gw2-characters; @include gw2-iconify(240, 192, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-scrapper { @extend %gw2-characters; @include gw2-iconify(0, 240, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-scribe { @extend %gw2-characters; @include gw2-iconify(48, 240, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-soulbeast { @extend %gw2-characters; @include gw2-iconify(96, 240, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-spellbreaker { @extend %gw2-characters; @include gw2-iconify(144, 240, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-sylvari { @extend %gw2-characters; @include gw2-iconify(192, 240, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-tailor { @extend %gw2-characters; @include gw2-iconify(240, 240, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-tempest { @extend %gw2-characters; @include gw2-iconify(0, 288, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-thief { @extend %gw2-characters; @include gw2-iconify(48, 288, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-warrior { @extend %gw2-characters; @include gw2-iconify(96, 288, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-weaponsmith { @extend %gw2-characters; @include gw2-iconify(144, 288, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
+.#{$gw2-css-prefix}-weaver { @extend %gw2-characters; @include gw2-iconify(192, 288, 48, 48, $gw2-characters-file-width, $gw2-characters-file-height); }
