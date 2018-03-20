@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://gw2ocs.github.io/gw2icon/sitemap.xml
