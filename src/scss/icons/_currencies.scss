@@ -13,7 +13,7 @@ $gw2-currencies-file-name: 'currencies.png';
 .#{$gw2-css-prefix}-badge-of-honor { @extend %gw2-currencies; @include gw2-iconify(0, 160, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-bandit-crest { @extend %gw2-currencies; @include gw2-iconify(0, 200, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-deadly-bloom { @extend %gw2-currencies; @include gw2-iconify(0, 240, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
-.#{$gw2-css-prefix}-destroyed-matrix-cube-key { @extend %gw2-currencies; @include gw2-iconify(0, 280, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
+.#{$gw2-css-prefix}-bandit-skeleton-key { @extend %gw2-currencies; @include gw2-iconify(0, 280, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-elegy-mosaic { @extend %gw2-currencies; @include gw2-iconify(0, 320, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-exalted-key { @extend %gw2-currencies; @include gw2-iconify(0, 360, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-flame-legion-charr-carving { @extend %gw2-currencies; @include gw2-iconify(0, 400, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
@@ -32,7 +32,7 @@ $gw2-currencies-file-name: 'currencies.png';
 .#{$gw2-css-prefix}-proof-of-heroics { @extend %gw2-currencies; @include gw2-iconify(0, 920, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-provisioner-token { @extend %gw2-currencies; @include gw2-iconify(0, 960, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-pvp-league-ticket { @extend %gw2-currencies; @include gw2-iconify(0, 1000, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
-.#{$gw2-css-prefix}-rolan-master-key { @extend %gw2-currencies; @include gw2-iconify(0, 1040, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
+.#{$gw2-css-prefix}-trader-key { @extend %gw2-currencies; @include gw2-iconify(0, 1040, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-seal-of-beetletun { @extend %gw2-currencies; @include gw2-iconify(0, 1080, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-shard-of-zhaitan { @extend %gw2-currencies; @include gw2-iconify(0, 1120, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
 .#{$gw2-css-prefix}-spirit-shard { @extend %gw2-currencies; @include gw2-iconify(0, 1160, 40, 40, $gw2-currencies-file-width, $gw2-currencies-file-height); }
