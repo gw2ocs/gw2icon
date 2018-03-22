@@ -6,8 +6,8 @@
 	font-size: inherit;
 	text-align: left;
 	overflow: hidden;
-	box-sizing: border-box;
 	vertical-align: middle;
+	box-sizing: border-box;
 }
 
 @mixin gw2-iconify($x, $y, $width, $height, $file-width, $file-height) {
