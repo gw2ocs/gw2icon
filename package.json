@@ -25,6 +25,12 @@
   },
   "homepage": "https://github.com/gw2ocs/gw2icon#readme",
   "devDependencies": {
-    "sass-lint": "^1.12.1"
-  }
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp.spritesmith": "^6.9.0",
+    "merge-stream": "^1.0.1",
+    "sass-lint": "^1.12.1",
+    "vinyl-buffer": "^1.0.1"
+  },
+  "dependencies": {}
 }
