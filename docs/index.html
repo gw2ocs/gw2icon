@@ -39,6 +39,8 @@
     <link rel="shortcut icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="css/gw2icon.min.css" />
     <link rel="stylesheet" href="css/atelier-estuary-light.css" />
+	<link rel="stylesheet" href="css/fa-brand.min.css" />
+	<link rel="stylesheet" href="css/fontawesome.min.css" />
     <style>
         @import url('https://fonts.googleapis.com/css?family=Cagliostro');
         @import url('https://fonts.googleapis.com/css?family=Lato');
@@ -199,6 +201,43 @@
 
         .hidden {
             display: none;
+        }
+
+        #social {
+            display: flex;
+            width: 100%;
+            max-width: 100px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+            list-style-type: none;
+        }
+
+        #social > li {
+            display: inline;
+        }
+
+        #social > li > a {
+            text-decoration: none;
+        }
+
+        .social-link {
+            color: dimgrey;
+            text-shadow: 0 0 1px rgba(120, 120, 120, .5);
+        }
+
+        .social-link:hover {
+            color: white;
+            text-shadow: 0 0 2px rgba(200, 200, 200, .8);
+        }
+
+        .social-github:hover {
+            color: black;
+        }
+
+        .social-twitter:hover {
+            color: #1da1f2;
         }
     </style>
 </head>
@@ -464,11 +503,10 @@
     </aside>
 
     <footer>
-        <p>
-            <iframe src="https://ghbtns.com/github-btn.html?user=gw2ocs&repo=gw2icon&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-            <iframe src="https://ghbtns.com/github-btn.html?user=gw2ocs&repo=gw2icon&type=watch&count=true&v=2" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-            <iframe src="https://ghbtns.com/github-btn.html?user=gw2ocs&repo=gw2icon&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
-        </p>
+        <ul id="social">
+			<li><a class="social-link social-github" href="https://github.com/gw2ocs/gw2icon" title="Github - gw2ocs/gw2icon"><i class="fab fa-github fa-2x"></i></a></li>
+			<li><a class="social-link social-twitter" href="https://twitter.com/GW2Icon" title="Twitter - GW2Icon"><i class="fab fa-twitter fa-2x"></i></a></li>
+        </ul>
         <p>Icons and background are © 2015 ArenaNet, Inc. All rights reserved.</p>
         <p>Made with <i class="gw2-karma"></i> by <strong>Pandraghon#3647</strong>.</p>
     </footer>
@@ -497,11 +535,11 @@
                     const categ = categsH4[i];
                     categ.classList.toggle('hidden', !categ.nextElementSibling.querySelectorAll('div:not(.hidden)').length);
                 }
-            }
+            };
 
             const init = function() {
                 input.addEventListener('input', filter, false);
-            }
+            };
 
             window.addEventListener('load', init, false);
             window.removeEventListener('unload', init);
