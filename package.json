@@ -27,6 +27,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^3.2.1",
     "gulp.spritesmith": "^6.9.0",
     "merge-stream": "^1.0.1",
     "sass-lint": "^1.12.1",
