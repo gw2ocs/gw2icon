@@ -1,14 +1,16 @@
 language: node_js
 node_js:
   - "8"
+  - "9"
 install: npm install
+script: bash ./.travis/test.sh
 jobs:
   include:
-    - stage: test
-      script: npm test
     - stage: deploy
-      script: bash .github/gh-pages.sh
-    - script: bash .github/build.sh
+      node_js: 9
+      script: bash .travis/deploy.sh
 cache:
   directories:
     - node_modules
+dist: trusty
+sudo: false

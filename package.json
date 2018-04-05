@@ -7,8 +7,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "sass-lint": "sass-lint --verbose --no-exit",
-    "test": "npm run sass-lint"
+    "sass-lint": "gulp sass_lint",
+    "test": "npm run sass-lint",
+	"build": "gulp"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "gulp": "^3.9.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-sass": "^3.2.1",
+    "gulp-sass-lint": "^1.3.4",
     "gulp.spritesmith": "^6.9.0",
     "merge-stream": "^1.0.1",
     "sass-lint": "^1.12.1",
