@@ -4,8 +4,9 @@ const merge = require('merge-stream');
 const spritesmith = require('gulp.spritesmith');
 const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
+const sassLint = require('gulp-sass-lint');
 
-const types = ['currencies', 'menu', 'characters'];
+const types = ['currencies', 'menu', 'characters', 'squad'];
 
 types.map(type => {
     gulp.task(`sprite_${type}`, () => {
@@ -30,14 +31,21 @@ types.map(type => {
 });
 
 gulp.task('copy_src', () => {
-	return gulp.src('src/scss/*.scss')
-		.pipe(gulp.dest('_build/scss'));
+    return gulp.src('src/scss/*.scss')
+        .pipe(gulp.dest('_build/scss'));
 });
 
-gulp.task('sass', [...types.map(type => `sprite_${type}`)], () => {
-	return gulp.src('_build/scss/*.scss')
-	    .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
-	    .pipe(gulp.dest('_build/css'));
-})
+gulp.task('sass_lint', [...types.map(type => `sprite_${type}`), 'copy_src'], () => {
+    return gulp.src('_build/scss/**/*.scss')
+        .pipe(sassLint())
+        .pipe(sassLint.format())
+        .pipe(sassLint.failOnError());
+});
 
-gulp.task('default', [...types.map(type => `sprite_${type}`), 'copy_src', 'sass']);
+gulp.task('sass', ['sass_lint'], () => {
+    return gulp.src('_build/scss/*.scss')
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('_build/css'));
+});
+
+gulp.task('default', [...types.map(type => `sprite_${type}`), 'copy_src', 'sass_lint', 'sass']);
