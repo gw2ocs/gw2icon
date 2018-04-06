@@ -27,7 +27,14 @@ TARGET_BRANCH="build"
 git clone $REPO out_$TARGET_BRANCH -b $TARGET_BRANCH
 
 cd out_$TARGET_BRANCH
-. "$TARGET_BRANCH.sh"
+#. "$TARGET_BRANCH.sh"
+rm -rf img
+rm -rf css
+rm -rf scss
+cp $CURRENT_DIR/_build/* .
+git add .
+git commit -m "Update build $TRAVIS_COMMIT"
+git push $REPO HEAD:build
 
 cd $CURRENT_DIR
 rm -rf out_$TARGET_BRANCH
@@ -37,7 +44,17 @@ TARGET_BRANCH="gh-pages"
 git clone $REPO out_$TARGET_BRANCH -b $TARGET_BRANCH
 
 cd out_$TARGET_BRANCH
-. "$TARGET_BRANCH.sh"
+#. "$TARGET_BRANCH.sh"
+rm -rf img
+rm -rf css
+rm -rf js
+rm -rf webfonts
+cp $CURRENT_DIR/docs/* .
+cp $CURRENT_DIR/_build/css/* css/
+cp $CURRENT_DIR/_build/img/* img/
+git add .
+git commit -m "Update docs $TRAVIS_COMMIT"
+git push $REPO HEAD:gh-pages
 
 cd $CURRENT_DIR
 rm -rf out_$TARGET_BRANCH
