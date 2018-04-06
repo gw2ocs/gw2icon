@@ -1,0 +1,29 @@
+// Mixins
+// ------
+
+%gw2-icon {
+	display: inline-block;
+	font-size: inherit;
+	text-align: left;
+	overflow: hidden;
+	vertical-align: middle;
+	box-sizing: border-box;
+}
+
+@mixin gw2-iconify($x, $y, $width, $height, $file-width, $file-height) {
+	@extend %gw2-icon;
+	height: $gw2-icon-height;
+	padding-right: #{$gw2-icon-height * $width / $height};
+	background-position: #{if($file-width == $width, 0, $x / ($file-width - $width)) * 100%} #{if($file-height == $height, 0, $y / ($file-height - $height)) * 100%};
+	background-size: #{$file-width * $gw2-icon-height / $height} #{$file-height * $gw2-icon-height / $height};
+}
+
+@mixin gw2-icon-rotate($degrees, $rotation) {
+	transform: rotate($degrees);
+	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation})';
+}
+
+@mixin gw2-icon-flip($horiz, $vert, $rotation) {
+	transform: scale($horiz, $vert);
+	-ms-filter: 'progid:DXImageTransform.Microsoft.BasicImage(rotation=#{$rotation}, mirror=1)';
+}
