@@ -31,7 +31,7 @@ cd out_$TARGET_BRANCH
 rm -rf img
 rm -rf css
 rm -rf scss
-cp $CURRENT_DIR/_build/* .
+cp -r $CURRENT_DIR/_build/* .
 git add .
 git commit -m "Update build $TRAVIS_COMMIT"
 git push $REPO HEAD:build
@@ -49,9 +49,9 @@ rm -rf img
 rm -rf css
 rm -rf js
 rm -rf webfonts
-cp $CURRENT_DIR/docs/* .
-cp $CURRENT_DIR/_build/css/* css/
-cp $CURRENT_DIR/_build/img/* img/
+cp -r $CURRENT_DIR/docs/* .
+cp -r $CURRENT_DIR/_build/css/* css/
+cp -r $CURRENT_DIR/_build/img/* img/
 git add .
 git commit -m "Update docs $TRAVIS_COMMIT"
 git push $REPO HEAD:gh-pages
