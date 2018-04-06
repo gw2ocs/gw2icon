@@ -5,6 +5,7 @@ const spritesmith = require('gulp.spritesmith');
 const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
 const sassLint = require('gulp-sass-lint');
+const rename = require('gulp-rename');
 
 const types = ['currencies', 'menu', 'characters', 'squad'];
 
@@ -45,6 +46,7 @@ gulp.task('sass_lint', [...types.map(type => `sprite_${type}`), 'copy_src'], () 
 gulp.task('sass', ['sass_lint'], () => {
     return gulp.src('_build/scss/*.scss')
         .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+		.pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('_build/css'));
 });
 
