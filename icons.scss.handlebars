@@ -1,0 +1,39 @@
+{
+  'functions': false,
+  'variableNameTransforms': ['dasherize']
+}
+
+{{#extend "scss"}}
+{{#content "sprites-comment"}}
+{{/content}}
+{{#content "sprites"}}
+$gw2-{{spritesheet_info.strings.name}}-file-width: {{spritesheet.width}};
+$gw2-{{spritesheet_info.strings.name}}-file-height: {{spritesheet.height}};
+$gw2-{{spritesheet_info.strings.name}}-file-name: '{{{spritesheet.escaped_image}}}';
+
+%gw2-{{spritesheet_info.strings.name}} {
+	background: url('#{$gw2-img-path}#{$gw2-{{spritesheet_info.strings.name}}-file-name}') no-repeat;
+}
+
+{{#each sprites}}
+${{strings.name}}: ('{{strings.name}}', {{x}}, {{y}}, {{width}}, {{height}});
+{{/each}}
+{{/content}}
+{{#content "spritesheet"}}
+
+${{spritesheet_info.strings.name_sprites}}: ({{#each sprites}}${{strings.name}}, {{/each}});
+
+@each $sprite in ${{spritesheet_info.strings.name_sprites}} {
+	$sprite-name: nth($sprite, 1);
+	$sprite-x: nth($sprite, 2);
+	$sprite-y: nth($sprite, 3);
+	$sprite-width: nth($sprite, 4);
+	$sprite-height: nth($sprite, 5);
+
+	.#{$gw2-css-prefix}-#{$sprite-name} {
+		@extend %gw2-{{spritesheet_info.name}};
+		@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-{{spritesheet_info.strings.name}}-file-width, $gw2-{{spritesheet_info.strings.name}}-file-height);
+	}
+}
+{{/content}}
+{{/extend}}
