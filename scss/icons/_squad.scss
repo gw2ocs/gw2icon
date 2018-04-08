@@ -6,35 +6,35 @@ $gw2-squad-file-name: 'squad.png';
 	background: url('#{$gw2-img-path}#{$gw2-squad-file-name}') no-repeat;
 }
 
-$arrow-marker: ('arrow-marker', 200, 92, 30, 30);
-$catmander-blue: ('catmander-blue', 0, 90, 40, 45);
-$catmander-cyan: ('catmander-cyan', 120, 45, 40, 45);
-$catmander-green: ('catmander-green', 0, 0, 40, 45);
-$catmander-magenta: ('catmander-magenta', 40, 0, 40, 45);
-$catmander-orange: ('catmander-orange', 80, 0, 40, 45);
-$catmander-purple: ('catmander-purple', 0, 45, 40, 45);
-$catmander-red: ('catmander-red', 40, 45, 40, 45);
-$catmander-white: ('catmander-white', 80, 45, 40, 45);
-$catmander-yellow: ('catmander-yellow', 120, 0, 40, 45);
-$circle-marker: ('circle-marker', 200, 62, 30, 30);
-$commander-blue: ('commander-blue', 160, 0, 40, 42);
-$commander-cyan: ('commander-cyan', 40, 90, 40, 42);
-$commander-green: ('commander-green', 120, 90, 40, 42);
-$commander-magenta: ('commander-magenta', 80, 90, 40, 42);
-$commander-orange: ('commander-orange', 160, 42, 40, 42);
-$commander-purple: ('commander-purple', 160, 84, 40, 42);
-$commander-red: ('commander-red', 0, 135, 40, 42);
-$commander-white: ('commander-white', 40, 135, 40, 42);
-$commander-yellow: ('commander-yellow', 80, 135, 40, 42);
-$heart-marker: ('heart-marker', 200, 122, 30, 30);
-$spiral-marker: ('spiral-marker', 200, 32, 30, 30);
-$squad-attack-order: ('squad-attack-order', 120, 135, 32, 32);
-$squad-defend-order: ('squad-defend-order', 152, 135, 32, 32);
-$squad-rally-order: ('squad-rally-order', 200, 0, 32, 32);
-$square-marker: ('square-marker', 0, 177, 30, 30);
-$star-marker: ('star-marker', 30, 177, 30, 30);
-$triangle-marker: ('triangle-marker', 60, 177, 30, 30);
-$x-marker: ('x-marker', 90, 177, 30, 30);
+$arrow-marker: ('arrow-marker', 200, 92, 30, 30, ());
+$catmander-blue: ('catmander-blue', 0, 90, 40, 45, ());
+$catmander-cyan: ('catmander-cyan', 120, 45, 40, 45, ());
+$catmander-green: ('catmander-green', 0, 0, 40, 45, ());
+$catmander-magenta: ('catmander-magenta', 40, 0, 40, 45, ());
+$catmander-orange: ('catmander-orange', 80, 0, 40, 45, ());
+$catmander-purple: ('catmander-purple', 0, 45, 40, 45, ());
+$catmander-red: ('catmander-red', 40, 45, 40, 45, ());
+$catmander-white: ('catmander-white', 80, 45, 40, 45, ());
+$catmander-yellow: ('catmander-yellow', 120, 0, 40, 45, ());
+$circle-marker: ('circle-marker', 200, 62, 30, 30, ());
+$commander-blue: ('commander-blue', 160, 0, 40, 42, ());
+$commander-cyan: ('commander-cyan', 40, 90, 40, 42, ());
+$commander-green: ('commander-green', 120, 90, 40, 42, ());
+$commander-magenta: ('commander-magenta', 80, 90, 40, 42, ());
+$commander-orange: ('commander-orange', 160, 42, 40, 42, ());
+$commander-purple: ('commander-purple', 160, 84, 40, 42, ());
+$commander-red: ('commander-red', 0, 135, 40, 42, ());
+$commander-white: ('commander-white', 40, 135, 40, 42, ());
+$commander-yellow: ('commander-yellow', 80, 135, 40, 42, ());
+$heart-marker: ('heart-marker', 200, 122, 30, 30, ());
+$spiral-marker: ('spiral-marker', 200, 32, 30, 30, ());
+$squad-attack-order: ('squad-attack-order', 120, 135, 32, 32, ());
+$squad-defend-order: ('squad-defend-order', 152, 135, 32, 32, ());
+$squad-rally-order: ('squad-rally-order', 200, 0, 32, 32, ());
+$square-marker: ('square-marker', 0, 177, 30, 30, ());
+$star-marker: ('star-marker', 30, 177, 30, 30, ());
+$triangle-marker: ('triangle-marker', 60, 177, 30, 30, ());
+$x-marker: ('x-marker', 90, 177, 30, 30, ());
 
 $squad-sprites: ($arrow-marker, $catmander-blue, $catmander-cyan, $catmander-green, $catmander-magenta, $catmander-orange, $catmander-purple, $catmander-red, $catmander-white, $catmander-yellow, $circle-marker, $commander-blue, $commander-cyan, $commander-green, $commander-magenta, $commander-orange, $commander-purple, $commander-red, $commander-white, $commander-yellow, $heart-marker, $spiral-marker, $squad-attack-order, $squad-defend-order, $squad-rally-order, $square-marker, $star-marker, $triangle-marker, $x-marker, );
 
@@ -45,9 +45,24 @@ $squad-sprites: ($arrow-marker, $catmander-blue, $catmander-cyan, $catmander-gre
 	$sprite-width: nth($sprite, 4);
 	$sprite-height: nth($sprite, 5);
 
-	.#{$gw2-css-prefix}-#{$sprite-name} {
-		@extend %gw2-squad;
-		@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-squad-file-width, $gw2-squad-file-height);
+	@if length($sprite) > 5 {
+		$aliases: nth($sprite, 6);
+		$aliases: append($aliases, $sprite-name);
+		$selector: ();
+
+		@each $item in $aliases {
+			$selector: append($selector, unquote('.#{$gw2-css-prefix}-#{$item}'), 'comma');
+		}
+
+		#{$selector} {
+			@extend %gw2-squad;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-squad-file-width, $gw2-squad-file-height);
+		}
+	} @else {
+		.#{$gw2-css-prefix}-#{$sprite-name} {
+			@extend %gw2-squad;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-squad-file-width, $gw2-squad-file-height);
+		}
 	}
 }
 

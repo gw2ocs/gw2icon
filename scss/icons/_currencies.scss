@@ -6,54 +6,54 @@ $gw2-currencies-file-name: 'currencies.png';
 	background: url('#{$gw2-img-path}#{$gw2-currencies-file-name}') no-repeat;
 }
 
-$aetherium: ('aetherium', 40, 0, 40, 40);
-$airship-part: ('airship-part', 160, 160, 40, 40);
-$ascalonian-tear: ('ascalonian-tear', 0, 40, 40, 40);
-$ascended-shard-of-glory: ('ascended-shard-of-glory', 40, 40, 40, 40);
-$badge-of-honor: ('badge-of-honor', 80, 0, 40, 40);
-$bandit-crest: ('bandit-crest', 80, 40, 40, 40);
-$bandit-skeleton-key: ('bandit-skeleton-key', 0, 80, 40, 40);
-$copper-coin: ('copper-coin', 255, 211, 15, 15);
-$deadly-bloom: ('deadly-bloom', 80, 80, 40, 40);
-$elegy-mosaic: ('elegy-mosaic', 120, 0, 40, 40);
-$exalted-key: ('exalted-key', 120, 40, 40, 40);
-$favor: ('favor', 240, 152, 24, 24);
-$flame-legion-charr-carving: ('flame-legion-charr-carving', 0, 120, 40, 40);
-$fractal-relic: ('fractal-relic', 40, 120, 40, 40);
-$gaeting-crystal: ('gaeting-crystal', 80, 120, 40, 40);
-$gem: ('gem', 264, 152, 16, 15);
-$geode: ('geode', 160, 0, 40, 40);
-$gold-coin: ('gold-coin', 240, 211, 15, 15);
-$guild-commendation: ('guild-commendation', 160, 80, 40, 40);
-$influence: ('influence', 255, 196, 15, 15);
-$karma: ('karma', 260, 176, 18, 15);
-$knowledge-crystal: ('knowledge-crystal', 40, 160, 40, 40);
-$laurel: ('laurel', 240, 176, 20, 20);
-$ley-line-crystal: ('ley-line-crystal', 120, 160, 40, 40);
-$lump-of-aurillium: ('lump-of-aurillium', 0, 0, 40, 40);
-$machete: ('machete', 200, 0, 40, 40);
-$magnetite-shard: ('magnetite-shard', 200, 40, 40, 40);
-$manifesto-of-the-moletariate: ('manifesto-of-the-moletariate', 200, 80, 40, 40);
-$pact-crowbar: ('pact-crowbar', 200, 120, 40, 40);
-$pristine-fractal-relic: ('pristine-fractal-relic', 200, 160, 40, 40);
-$proof-of-heroics: ('proof-of-heroics', 0, 200, 40, 40);
-$provisioner-token: ('provisioner-token', 40, 200, 40, 40);
-$pvp-league-ticket: ('pvp-league-ticket', 80, 200, 40, 40);
-$seal-of-beetletun: ('seal-of-beetletun', 120, 200, 40, 40);
-$shard-of-zhaitan: ('shard-of-zhaitan', 160, 200, 40, 40);
-$silver-coin: ('silver-coin', 240, 196, 15, 15);
-$spirit-shard: ('spirit-shard', 240, 0, 40, 40);
-$supply: ('supply', 240, 120, 32, 32);
-$symbol-of-koda: ('symbol-of-koda', 240, 40, 40, 40);
-$testimony-of-heroics: ('testimony-of-heroics', 200, 200, 40, 40);
-$trade-contract: ('trade-contract', 80, 160, 40, 40);
-$trader-key: ('trader-key', 0, 160, 40, 40);
-$transmutation-charge: ('transmutation-charge', 160, 120, 40, 40);
-$unbound-magic: ('unbound-magic', 160, 40, 40, 40);
-$vial-of-chak-acid: ('vial-of-chak-acid', 120, 120, 40, 40);
-$volatile-magic: ('volatile-magic', 120, 80, 40, 40);
-$wvw-tournament-claim-ticket: ('wvw-tournament-claim-ticket', 40, 80, 40, 40);
-$zephyrite-lockpick: ('zephyrite-lockpick', 240, 80, 40, 40);
+$aetherium: ('aetherium', 40, 0, 40, 40, ());
+$airship-part: ('airship-part', 160, 160, 40, 40, ());
+$ascalonian-tear: ('ascalonian-tear', 0, 40, 40, 40, ());
+$ascended-shard-of-glory: ('ascended-shard-of-glory', 40, 40, 40, 40, ());
+$badge-of-honor: ('badge-of-honor', 80, 0, 40, 40, ());
+$bandit-crest: ('bandit-crest', 80, 40, 40, 40, ());
+$bandit-skeleton-key: ('bandit-skeleton-key', 0, 80, 40, 40, ());
+$copper-coin: ('copper-coin', 255, 211, 15, 15, ());
+$deadly-bloom: ('deadly-bloom', 80, 80, 40, 40, ());
+$elegy-mosaic: ('elegy-mosaic', 120, 0, 40, 40, ());
+$exalted-key: ('exalted-key', 120, 40, 40, 40, ());
+$favor: ('favor', 240, 152, 24, 24, ());
+$flame-legion-charr-carving: ('flame-legion-charr-carving', 0, 120, 40, 40, ());
+$fractal-relic: ('fractal-relic', 40, 120, 40, 40, ());
+$gaeting-crystal: ('gaeting-crystal', 80, 120, 40, 40, ());
+$gem: ('gem', 264, 152, 16, 15, ());
+$geode: ('geode', 160, 0, 40, 40, ());
+$gold-coin: ('gold-coin', 240, 211, 15, 15, ());
+$guild-commendation: ('guild-commendation', 160, 80, 40, 40, ());
+$influence: ('influence', 255, 196, 15, 15, ());
+$karma: ('karma', 260, 176, 18, 15, ());
+$knowledge-crystal: ('knowledge-crystal', 40, 160, 40, 40, ());
+$laurel: ('laurel', 240, 176, 20, 20, ());
+$ley-line-crystal: ('ley-line-crystal', 120, 160, 40, 40, ());
+$lump-of-aurillium: ('lump-of-aurillium', 0, 0, 40, 40, ());
+$machete: ('machete', 200, 0, 40, 40, ());
+$magnetite-shard: ('magnetite-shard', 200, 40, 40, 40, ());
+$manifesto-of-the-moletariate: ('manifesto-of-the-moletariate', 200, 80, 40, 40, ());
+$pact-crowbar: ('pact-crowbar', 200, 120, 40, 40, ());
+$pristine-fractal-relic: ('pristine-fractal-relic', 200, 160, 40, 40, ());
+$proof-of-heroics: ('proof-of-heroics', 0, 200, 40, 40, ());
+$provisioner-token: ('provisioner-token', 40, 200, 40, 40, ());
+$pvp-league-ticket: ('pvp-league-ticket', 80, 200, 40, 40, ());
+$seal-of-beetletun: ('seal-of-beetletun', 120, 200, 40, 40, ());
+$shard-of-zhaitan: ('shard-of-zhaitan', 160, 200, 40, 40, ());
+$silver-coin: ('silver-coin', 240, 196, 15, 15, ());
+$spirit-shard: ('spirit-shard', 240, 0, 40, 40, ());
+$supply: ('supply', 240, 120, 32, 32, ());
+$symbol-of-koda: ('symbol-of-koda', 240, 40, 40, 40, ());
+$testimony-of-heroics: ('testimony-of-heroics', 200, 200, 40, 40, ());
+$trade-contract: ('trade-contract', 80, 160, 40, 40, ());
+$trader-key: ('trader-key', 0, 160, 40, 40, ());
+$transmutation-charge: ('transmutation-charge', 160, 120, 40, 40, ());
+$unbound-magic: ('unbound-magic', 160, 40, 40, 40, ());
+$vial-of-chak-acid: ('vial-of-chak-acid', 120, 120, 40, 40, ());
+$volatile-magic: ('volatile-magic', 120, 80, 40, 40, ());
+$wvw-tournament-claim-ticket: ('wvw-tournament-claim-ticket', 40, 80, 40, 40, ());
+$zephyrite-lockpick: ('zephyrite-lockpick', 240, 80, 40, 40, ());
 
 $currencies-sprites: ($aetherium, $airship-part, $ascalonian-tear, $ascended-shard-of-glory, $badge-of-honor, $bandit-crest, $bandit-skeleton-key, $copper-coin, $deadly-bloom, $elegy-mosaic, $exalted-key, $favor, $flame-legion-charr-carving, $fractal-relic, $gaeting-crystal, $gem, $geode, $gold-coin, $guild-commendation, $influence, $karma, $knowledge-crystal, $laurel, $ley-line-crystal, $lump-of-aurillium, $machete, $magnetite-shard, $manifesto-of-the-moletariate, $pact-crowbar, $pristine-fractal-relic, $proof-of-heroics, $provisioner-token, $pvp-league-ticket, $seal-of-beetletun, $shard-of-zhaitan, $silver-coin, $spirit-shard, $supply, $symbol-of-koda, $testimony-of-heroics, $trade-contract, $trader-key, $transmutation-charge, $unbound-magic, $vial-of-chak-acid, $volatile-magic, $wvw-tournament-claim-ticket, $zephyrite-lockpick, );
 
@@ -64,9 +64,24 @@ $currencies-sprites: ($aetherium, $airship-part, $ascalonian-tear, $ascended-sha
 	$sprite-width: nth($sprite, 4);
 	$sprite-height: nth($sprite, 5);
 
-	.#{$gw2-css-prefix}-#{$sprite-name} {
-		@extend %gw2-currencies;
-		@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-currencies-file-width, $gw2-currencies-file-height);
+	@if length($sprite) > 5 {
+		$aliases: nth($sprite, 6);
+		$aliases: append($aliases, $sprite-name);
+		$selector: ();
+
+		@each $item in $aliases {
+			$selector: append($selector, unquote('.#{$gw2-css-prefix}-#{$item}'), 'comma');
+		}
+
+		#{$selector} {
+			@extend %gw2-currencies;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-currencies-file-width, $gw2-currencies-file-height);
+		}
+	} @else {
+		.#{$gw2-css-prefix}-#{$sprite-name} {
+			@extend %gw2-currencies;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-currencies-file-width, $gw2-currencies-file-height);
+		}
 	}
 }
 
