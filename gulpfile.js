@@ -23,7 +23,7 @@ types.map(type => {
                     try {
                         sprite.aliases = require(aliasesPath)[sprite.name.replace(/_/g, '-')];
                     } catch(e) {
-                        sprite.aliases = false;
+                        sprite.aliases = [];
                     }
                 },
             }));

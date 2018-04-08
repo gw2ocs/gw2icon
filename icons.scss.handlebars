@@ -16,7 +16,7 @@ $gw2-{{spritesheet_info.strings.name}}-file-name: '{{{spritesheet.escaped_image}
 }
 
 {{#each sprites}}
-${{strings.name}}: ('{{strings.name}}', {{x}}, {{y}}, {{width}}, {{height}});
+${{strings.name}}: ('{{strings.name}}', {{x}}, {{y}}, {{width}}, {{height}}, ({{#each aliases}}'{{this}}', {{/each}}));
 {{/each}}
 {{/content}}
 {{#content "spritesheet"}}
