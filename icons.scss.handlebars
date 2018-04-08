@@ -16,7 +16,7 @@ $gw2-{{spritesheet_info.strings.name}}-file-name: '{{{spritesheet.escaped_image}
 }
 
 {{#each sprites}}
-${{strings.name}}: ('{{strings.name}}', {{x}}, {{y}}, {{width}}, {{height}});
+${{strings.name}}: ('{{strings.name}}', {{x}}, {{y}}, {{width}}, {{height}}, ({{#each aliases}}'{{this}}', {{/each}}));
 {{/each}}
 {{/content}}
 {{#content "spritesheet"}}
@@ -30,9 +30,24 @@ ${{spritesheet_info.strings.name_sprites}}: ({{#each sprites}}${{strings.name}},
 	$sprite-width: nth($sprite, 4);
 	$sprite-height: nth($sprite, 5);
 
-	.#{$gw2-css-prefix}-#{$sprite-name} {
-		@extend %gw2-{{spritesheet_info.name}};
-		@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-{{spritesheet_info.strings.name}}-file-width, $gw2-{{spritesheet_info.strings.name}}-file-height);
+	@if length($sprite) > 5 {
+		$aliases: nth($sprite, 6);
+		$aliases: append($aliases, $sprite-name);
+		$selector: ();
+
+		@each $item in $aliases {
+			$selector: append($selector, unquote('.#{$gw2-css-prefix}-#{$item}'), 'comma');
+		}
+
+		#{$selector} {
+			@extend %gw2-{{spritesheet_info.name}};
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-{{spritesheet_info.strings.name}}-file-width, $gw2-{{spritesheet_info.strings.name}}-file-height);
+		}
+	} @else {
+		.#{$gw2-css-prefix}-#{$sprite-name} {
+			@extend %gw2-{{spritesheet_info.name}};
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-{{spritesheet_info.strings.name}}-file-width, $gw2-{{spritesheet_info.strings.name}}-file-height);
+		}
 	}
 }
 {{/content}}

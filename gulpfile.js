@@ -6,6 +6,7 @@ const imagemin = require('gulp-imagemin');
 const sass = require('gulp-sass');
 const sassLint = require('gulp-sass-lint');
 const rename = require('gulp-rename');
+const { dirname, resolve } = require('path');
 
 const types = ['currencies', 'menu', 'characters', 'squad'];
 
@@ -17,6 +18,14 @@ types.map(type => {
                 cssName: `_${type}.scss`,
                 cssTemplate: 'icons.scss.handlebars',
                 cssSpritesheetName: type,
+                cssVarMap: (sprite) => {
+                    const aliasesPath = resolve(dirname(sprite.source_image), 'aliases.json');
+                    try {
+                        sprite.aliases = require(aliasesPath)[sprite.name.replace(/_/g, '-')];
+                    } catch(e) {
+                        sprite.aliases = [];
+                    }
+                },
             }));
 
         const imgStream = spriteData.img
