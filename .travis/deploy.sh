@@ -32,9 +32,11 @@ rm -rf img
 rm -rf css
 rm -rf scss
 cp -r $CURRENT_DIR/_build/* .
-git add .
-git commit -m "Update build $TRAVIS_COMMIT"
-git push $REPO HEAD:build
+if ! git diff-index --quiet HEAD --; then
+    git add .
+    git commit -m "Update build $TRAVIS_COMMIT"
+    git push $REPO HEAD:build
+fi
 
 cd $CURRENT_DIR
 rm -rf out_$TARGET_BRANCH
@@ -52,9 +54,11 @@ rm -rf webfonts
 cp -r $CURRENT_DIR/docs/* .
 cp -r $CURRENT_DIR/_build/css/* css/
 cp -r $CURRENT_DIR/_build/img/* img/
-git add .
-git commit -m "Update docs $TRAVIS_COMMIT"
-git push $REPO HEAD:gh-pages
+if ! git diff-index --quiet HEAD --; then
+    git add .
+    git commit -m "Update docs $TRAVIS_COMMIT"
+    git push $REPO HEAD:gh-pages
+fi
 
 cd $CURRENT_DIR
 rm -rf out_$TARGET_BRANCH
