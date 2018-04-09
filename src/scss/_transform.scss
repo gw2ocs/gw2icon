@@ -9,5 +9,5 @@
 .#{$gw2-css-prefix}-flip-horizontal {
 	@include gw2-icon-flip(-1, 1, 0);
 
-	.#{$gw2-css-prefix}-flip-vertical { @include gw2-icon-flip(-1, -1, 2); }
+	&.#{$gw2-css-prefix}-flip-vertical { @include gw2-icon-flip(-1, -1, 2); }
 }
