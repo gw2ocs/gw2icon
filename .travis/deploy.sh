@@ -32,7 +32,7 @@ rm -rf img
 rm -rf css
 rm -rf scss
 cp -r $CURRENT_DIR/_build/* .
-if ! git diff-index --quiet HEAD --; then
+if [[ `git status --porcelain` ]]; then
     echo -e "Commiting"
     git add .
     git commit -m "Update build $TRAVIS_COMMIT"
@@ -57,7 +57,7 @@ rm -rf webfonts
 cp -r $CURRENT_DIR/docs/* .
 cp -r $CURRENT_DIR/_build/css/* css/
 cp -r $CURRENT_DIR/_build/img/* img/
-if ! git diff-index --quiet HEAD --; then
+if [[ `git status --porcelain` ]]; then
     echo -e "Commiting"
     git add .
     git commit -m "Update docs $TRAVIS_COMMIT"
