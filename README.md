@@ -25,6 +25,6 @@ To view the icon list, please visit http://www.gw2icon.com/#icons.
 
 ## Credit
 
-[CSS Sprites](http://css.spritegen.com/) for the sprite generation.
+[font Awesome](https://fontawesome.com/) for the inspiration.
 
 Icons are © 2015 ArenaNet, Inc. All rights reserved.
