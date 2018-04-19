@@ -14,6 +14,7 @@ types.map(type => {
     gulp.task(`sprite_${type}`, () => {
         const spriteData = gulp.src(`src/img/${type}/*.png`)
             .pipe(spritesmith({
+		padding: 1,
                 imgName: `${type}.png`,
                 cssName: `_${type}.scss`,
                 cssTemplate: 'icons.scss.handlebars',
