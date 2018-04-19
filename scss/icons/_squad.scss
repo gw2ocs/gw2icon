@@ -1,40 +1,40 @@
-$gw2-squad-file-width: 232;
-$gw2-squad-file-height: 207;
+$gw2-squad-file-width: 237;
+$gw2-squad-file-height: 211;
 $gw2-squad-file-name: 'squad.png';
 
 %gw2-squad {
 	background: url('#{$gw2-img-path}#{$gw2-squad-file-name}') no-repeat;
 }
 
-$arrow-marker: ('arrow-marker', 200, 92, 30, 30, ());
-$catmander-blue: ('catmander-blue', 0, 90, 40, 45, ());
-$catmander-cyan: ('catmander-cyan', 120, 45, 40, 45, ());
+$arrow-marker: ('arrow-marker', 205, 95, 30, 30, ());
+$catmander-blue: ('catmander-blue', 0, 92, 40, 45, ());
+$catmander-cyan: ('catmander-cyan', 123, 46, 40, 45, ());
 $catmander-green: ('catmander-green', 0, 0, 40, 45, ());
-$catmander-magenta: ('catmander-magenta', 40, 0, 40, 45, ());
-$catmander-orange: ('catmander-orange', 80, 0, 40, 45, ());
-$catmander-purple: ('catmander-purple', 0, 45, 40, 45, ());
-$catmander-red: ('catmander-red', 40, 45, 40, 45, ());
-$catmander-white: ('catmander-white', 80, 45, 40, 45, ());
-$catmander-yellow: ('catmander-yellow', 120, 0, 40, 45, ());
-$circle-marker: ('circle-marker', 200, 62, 30, 30, ());
-$commander-blue: ('commander-blue', 160, 0, 40, 42, ());
-$commander-cyan: ('commander-cyan', 40, 90, 40, 42, ());
-$commander-green: ('commander-green', 120, 90, 40, 42, ());
-$commander-magenta: ('commander-magenta', 80, 90, 40, 42, ());
-$commander-orange: ('commander-orange', 160, 42, 40, 42, ());
-$commander-purple: ('commander-purple', 160, 84, 40, 42, ());
-$commander-red: ('commander-red', 0, 135, 40, 42, ());
-$commander-white: ('commander-white', 40, 135, 40, 42, ());
-$commander-yellow: ('commander-yellow', 80, 135, 40, 42, ());
-$heart-marker: ('heart-marker', 200, 122, 30, 30, ());
-$spiral-marker: ('spiral-marker', 200, 32, 30, 30, ());
-$squad-attack-order: ('squad-attack-order', 120, 135, 32, 32, ());
-$squad-defend-order: ('squad-defend-order', 152, 135, 32, 32, ());
-$squad-rally-order: ('squad-rally-order', 200, 0, 32, 32, ());
-$square-marker: ('square-marker', 0, 177, 30, 30, ());
-$star-marker: ('star-marker', 30, 177, 30, 30, ());
-$triangle-marker: ('triangle-marker', 60, 177, 30, 30, ());
-$x-marker: ('x-marker', 90, 177, 30, 30, ());
+$catmander-magenta: ('catmander-magenta', 41, 0, 40, 45, ());
+$catmander-orange: ('catmander-orange', 82, 0, 40, 45, ());
+$catmander-purple: ('catmander-purple', 0, 46, 40, 45, ());
+$catmander-red: ('catmander-red', 41, 46, 40, 45, ());
+$catmander-white: ('catmander-white', 82, 46, 40, 45, ());
+$catmander-yellow: ('catmander-yellow', 123, 0, 40, 45, ());
+$circle-marker: ('circle-marker', 205, 64, 30, 30, ());
+$commander-blue: ('commander-blue', 164, 0, 40, 42, ());
+$commander-cyan: ('commander-cyan', 41, 92, 40, 42, ());
+$commander-green: ('commander-green', 123, 92, 40, 42, ());
+$commander-magenta: ('commander-magenta', 82, 92, 40, 42, ());
+$commander-orange: ('commander-orange', 164, 43, 40, 42, ());
+$commander-purple: ('commander-purple', 164, 86, 40, 42, ());
+$commander-red: ('commander-red', 0, 138, 40, 42, ());
+$commander-white: ('commander-white', 41, 138, 40, 42, ());
+$commander-yellow: ('commander-yellow', 82, 138, 40, 42, ());
+$heart-marker: ('heart-marker', 205, 126, 30, 30, ());
+$spiral-marker: ('spiral-marker', 205, 33, 30, 30, ());
+$squad-attack-order: ('squad-attack-order', 123, 138, 32, 32, ());
+$squad-defend-order: ('squad-defend-order', 156, 138, 32, 32, ());
+$squad-rally-order: ('squad-rally-order', 205, 0, 32, 32, ());
+$square-marker: ('square-marker', 0, 181, 30, 30, ());
+$star-marker: ('star-marker', 31, 181, 30, 30, ());
+$triangle-marker: ('triangle-marker', 62, 181, 30, 30, ());
+$x-marker: ('x-marker', 93, 181, 30, 30, ());
 
 $squad-sprites: ($arrow-marker, $catmander-blue, $catmander-cyan, $catmander-green, $catmander-magenta, $catmander-orange, $catmander-purple, $catmander-red, $catmander-white, $catmander-yellow, $circle-marker, $commander-blue, $commander-cyan, $commander-green, $commander-magenta, $commander-orange, $commander-purple, $commander-red, $commander-white, $commander-yellow, $heart-marker, $spiral-marker, $squad-attack-order, $squad-defend-order, $squad-rally-order, $square-marker, $star-marker, $triangle-marker, $x-marker, );
 
