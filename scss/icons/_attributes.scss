@@ -8,7 +8,7 @@ $gw2-attributes-file-name: 'attributes.png';
 
 $agony-resistance: ('agony-resistance', 98, 0, 18, 18, ());
 $armor: ('armor', 58, 0, 20, 20, ());
-$boon-duration: ('boon-duration', 0, 71, 18, 18, ());
+$boon-duration: ('boon-duration', 0, 71, 18, 18, ('concentration', ));
 $condition-damage: ('condition-damage', 79, 38, 18, 18, ());
 $condition-duration: ('condition-duration', 79, 0, 18, 18, ('expertise', ));
 $critical-chance: ('critical-chance', 58, 21, 20, 20, ());
