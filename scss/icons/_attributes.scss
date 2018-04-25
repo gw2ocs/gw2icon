@@ -1,0 +1,58 @@
+$gw2-attributes-file-width: 116;
+$gw2-attributes-file-height: 89;
+$gw2-attributes-file-name: 'attributes.png';
+
+%gw2-attributes {
+	background: url('#{$gw2-img-path}#{$gw2-attributes-file-name}') no-repeat;
+}
+
+$agony-resistance: ('agony-resistance', 98, 0, 18, 18, ());
+$armor: ('armor', 58, 0, 20, 20, ());
+$boon-duration: ('boon-duration', 0, 71, 18, 18, ());
+$condition-damage: ('condition-damage', 79, 38, 18, 18, ());
+$condition-duration: ('condition-duration', 79, 0, 18, 18, ('expertise', ));
+$critical-chance: ('critical-chance', 58, 21, 20, 20, ());
+$critical-damage: ('critical-damage', 0, 50, 20, 20, ());
+$ferocity: ('ferocity', 42, 50, 18, 18, ());
+$gold-find: ('gold-find', 0, 25, 28, 24, ());
+$healing-power: ('healing-power', 29, 25, 20, 20, ());
+$health: ('health', 79, 19, 18, 18, ());
+$karma-gain: ('karma-gain', 29, 0, 28, 24, ());
+$magic-find: ('magic-find', 21, 50, 20, 20, ());
+$power: ('power', 19, 71, 18, 18, ());
+$precision: ('precision', 38, 71, 18, 18, ());
+$toughness: ('toughness', 57, 71, 18, 18, ());
+$vitality: ('vitality', 76, 71, 18, 18, ());
+$xp-gain: ('xp-gain', 0, 0, 28, 24, ());
+
+$attributes-sprites: ($agony-resistance, $armor, $boon-duration, $condition-damage, $condition-duration, $critical-chance, $critical-damage, $ferocity, $gold-find, $healing-power, $health, $karma-gain, $magic-find, $power, $precision, $toughness, $vitality, $xp-gain, );
+
+@each $sprite in $attributes-sprites {
+	$sprite-name: nth($sprite, 1);
+	$sprite-x: nth($sprite, 2);
+	$sprite-y: nth($sprite, 3);
+	$sprite-width: nth($sprite, 4);
+	$sprite-height: nth($sprite, 5);
+
+	@if length($sprite) > 5 {
+		$aliases: nth($sprite, 6);
+		$aliases: append($aliases, $sprite-name);
+		$selector: ();
+
+		@each $item in $aliases {
+			$selector: append($selector, unquote('.#{$gw2-css-prefix}-#{$item}'), 'comma');
+		}
+
+		#{$selector} {
+			@extend %gw2-attributes;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-attributes-file-width, $gw2-attributes-file-height);
+		}
+	} @else {
+		.#{$gw2-css-prefix}-#{$sprite-name} {
+			@extend %gw2-attributes;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-attributes-file-width, $gw2-attributes-file-height);
+		}
+	}
+}
+
+
