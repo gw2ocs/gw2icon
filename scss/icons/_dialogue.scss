@@ -1,0 +1,63 @@
+$gw2-dialogue-file-width: 102;
+$gw2-dialogue-file-height: 100;
+$gw2-dialogue-file-name: 'dialogue.png';
+
+%gw2-dialogue {
+	background: url('#{$gw2-img-path}#{$gw2-dialogue-file-name}') no-repeat;
+}
+
+$dialogue-back: ('dialogue-back', 19, 82, 18, 18, ());
+$dialogue-charisma: ('dialogue-charisma', 42, 42, 20, 20, ());
+$dialogue-choice: ('dialogue-choice', 84, 57, 18, 18, ());
+$dialogue-collection: ('dialogue-collection', 21, 21, 20, 20, ());
+$dialogue-combat: ('dialogue-combat', 57, 63, 18, 18, ());
+$dialogue-dignity: ('dialogue-dignity', 42, 21, 20, 20, ());
+$dialogue-end: ('dialogue-end', 84, 19, 18, 18, ());
+$dialogue-ferocity: ('dialogue-ferocity', 21, 42, 20, 20, ());
+$dialogue-give: ('dialogue-give', 0, 63, 18, 18, ());
+$dialogue-heartno: ('dialogue-heartno', 63, 0, 20, 20, ());
+$dialogue-heartyes: ('dialogue-heartyes', 63, 21, 20, 20, ());
+$dialogue-herono: ('dialogue-herono', 0, 0, 20, 20, ());
+$dialogue-heroyes: ('dialogue-heroyes', 0, 42, 20, 20, ());
+$dialogue-is-talk: ('dialogue-is-talk', 19, 63, 18, 18, ());
+$dialogue-karma: ('dialogue-karma', 38, 82, 18, 15, ());
+$dialogue-legendary-weapon: ('dialogue-legendary-weapon', 42, 0, 20, 20, ());
+$dialogue-more: ('dialogue-more', 84, 0, 18, 18, ());
+$dialogue-question-mark: ('dialogue-question-mark', 63, 42, 18, 18, ());
+$dialogue-ready: ('dialogue-ready', 84, 38, 18, 18, ());
+$dialogue-recap: ('dialogue-recap', 0, 21, 20, 20, ());
+$dialogue-sell: ('dialogue-sell', 0, 82, 18, 18, ());
+$dialogue-story: ('dialogue-story', 38, 63, 18, 18, ());
+$dialogue-yes: ('dialogue-yes', 21, 0, 20, 20, ());
+
+$dialogue-sprites: ($dialogue-back, $dialogue-charisma, $dialogue-choice, $dialogue-collection, $dialogue-combat, $dialogue-dignity, $dialogue-end, $dialogue-ferocity, $dialogue-give, $dialogue-heartno, $dialogue-heartyes, $dialogue-herono, $dialogue-heroyes, $dialogue-is-talk, $dialogue-karma, $dialogue-legendary-weapon, $dialogue-more, $dialogue-question-mark, $dialogue-ready, $dialogue-recap, $dialogue-sell, $dialogue-story, $dialogue-yes, );
+
+@each $sprite in $dialogue-sprites {
+	$sprite-name: nth($sprite, 1);
+	$sprite-x: nth($sprite, 2);
+	$sprite-y: nth($sprite, 3);
+	$sprite-width: nth($sprite, 4);
+	$sprite-height: nth($sprite, 5);
+
+	@if length($sprite) > 5 {
+		$aliases: nth($sprite, 6);
+		$aliases: append($aliases, $sprite-name);
+		$selector: ();
+
+		@each $item in $aliases {
+			$selector: append($selector, unquote('.#{$gw2-css-prefix}-#{$item}'), 'comma');
+		}
+
+		#{$selector} {
+			@extend %gw2-dialogue;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-dialogue-file-width, $gw2-dialogue-file-height);
+		}
+	} @else {
+		.#{$gw2-css-prefix}-#{$sprite-name} {
+			@extend %gw2-dialogue;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-dialogue-file-width, $gw2-dialogue-file-height);
+		}
+	}
+}
+
+
