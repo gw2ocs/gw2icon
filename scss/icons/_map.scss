@@ -1,0 +1,65 @@
+$gw2-map-file-width: 164;
+$gw2-map-file-height: 160;
+$gw2-map-file-name: 'map.png';
+
+%gw2-map {
+	background: url('#{$gw2-img-path}#{$gw2-map-file-name}') no-repeat;
+}
+
+$complete-heart: ('complete-heart', 140, 88, 20, 20, ());
+$downed-ally: ('downed-ally', 41, 0, 32, 39, ());
+$downed-enemy: ('downed-enemy', 74, 0, 32, 36, ());
+$guild-banker: ('guild-banker', 107, 66, 32, 32, ());
+$guild-commendation-trader: ('guild-commendation-trader', 0, 41, 32, 32, ());
+$guild-enhancements: ('guild-enhancements', 33, 41, 32, 32, ());
+$guild-hall-explorer: ('guild-hall-explorer', 66, 41, 32, 32, ());
+$guild-miniatures: ('guild-miniatures', 91, 107, 24, 24, ());
+$guild-registrar: ('guild-registrar', 33, 74, 32, 32, ());
+$guild-trader: ('guild-trader', 140, 0, 24, 24, ());
+$hero-point: ('hero-point', 107, 0, 32, 32, ());
+$hero-point-empty: ('hero-point-empty', 107, 33, 32, 32, ());
+$incomplete-heart: ('incomplete-heart', 21, 140, 20, 20, ());
+$locked-waypoint: ('locked-waypoint', 140, 25, 20, 20, ());
+$mentor: ('mentor', 66, 107, 24, 24, ());
+$mine: ('mine', 33, 107, 32, 32, ());
+$personal-waypoint: ('personal-waypoint', 0, 107, 32, 32, ());
+$plant: ('plant', 0, 74, 32, 32, ());
+$point-of-interest: ('point-of-interest', 140, 46, 20, 20, ());
+$point-of-interest-undiscovered: ('point-of-interest-undiscovered', 140, 67, 20, 20, ());
+$target: ('target', 0, 0, 40, 40, ());
+$vista: ('vista', 140, 109, 20, 20, ());
+$vista-empty: ('vista-empty', 116, 107, 20, 20, ());
+$waypoint: ('waypoint', 0, 140, 20, 20, ());
+$wood: ('wood', 66, 74, 32, 32, ());
+
+$map-sprites: ($complete-heart, $downed-ally, $downed-enemy, $guild-banker, $guild-commendation-trader, $guild-enhancements, $guild-hall-explorer, $guild-miniatures, $guild-registrar, $guild-trader, $hero-point, $hero-point-empty, $incomplete-heart, $locked-waypoint, $mentor, $mine, $personal-waypoint, $plant, $point-of-interest, $point-of-interest-undiscovered, $target, $vista, $vista-empty, $waypoint, $wood, );
+
+@each $sprite in $map-sprites {
+	$sprite-name: nth($sprite, 1);
+	$sprite-x: nth($sprite, 2);
+	$sprite-y: nth($sprite, 3);
+	$sprite-width: nth($sprite, 4);
+	$sprite-height: nth($sprite, 5);
+
+	@if length($sprite) > 5 {
+		$aliases: nth($sprite, 6);
+		$aliases: append($aliases, $sprite-name);
+		$selector: ();
+
+		@each $item in $aliases {
+			$selector: append($selector, unquote('.#{$gw2-css-prefix}-#{$item}'), 'comma');
+		}
+
+		#{$selector} {
+			@extend %gw2-map;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-map-file-width, $gw2-map-file-height);
+		}
+	} @else {
+		.#{$gw2-css-prefix}-#{$sprite-name} {
+			@extend %gw2-map;
+			@include gw2-iconify($sprite-x, $sprite-y, $sprite-width, $sprite-height, $gw2-map-file-width, $gw2-map-file-height);
+		}
+	}
+}
+
+
