@@ -8,7 +8,7 @@ const sassLint = require('gulp-sass-lint');
 const rename = require('gulp-rename');
 const { dirname, resolve } = require('path');
 
-const types = ['currencies', 'menu', 'characters', 'squad', 'attributes'];
+const types = ['currencies', 'menu', 'characters', 'squad', 'attributes', 'dialogue'];
 
 types.map(type => {
     gulp.task(`sprite_${type}`, () => {
