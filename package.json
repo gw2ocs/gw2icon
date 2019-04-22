@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/gw2ocs/gw2icon#readme",
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.1",
     "gulp-imagemin": "^4.1.0",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
